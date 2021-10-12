@@ -1,1 +1,3 @@
 # fe-internship
+
+Git practice
