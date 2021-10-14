@@ -1,0 +1,90 @@
+body {
+  width: 100%;
+}
+
+.container {
+  padding: 0 144px;
+}
+
+
+/* ○ Visual 
+○ Box
+○ Text 
+Color */
+
+.menu {
+  height: 3rem;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__logo img {
+  height: 70%;
+}
+
+.menu__category--list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__functionalButton img {
+  height: 50%;
+}
+
+.hero {
+  height: 800px;
+  width: 100%;
+  padding-left: 240px;
+  display: flex;
+  align-items: center;
+  background-image: url(../assets/img/home-banner.png);
+  background-repeat: no-repeat;
+}
+
+.hero__text {
+  /* font-size: 4.5rem; */
+  color: "white";
+}
+
+.hero__button {
+  height: 2.25rem;
+}
+
+.hero__button img {
+  height: 100%;
+}
+
+.pill {
+  height: 125px;
+  width: 76.38%;
+}
+
+.pill__item--icon img {
+  height: 1rem;
+}
+
+.banner {
+  width: 100%;
+}
+
+.selected {
+  width: 100%;
+}
+
+.chosenReason {
+  width: 100%;
+}
+
+.todayProduct {
+  width: 100%;
+}
+
+.subcribe {
+  width: 100%;
+}
