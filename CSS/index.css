@@ -1,16 +1,29 @@
-body {
-  width: 100%;
+:root {
+  --primary-color: "#FBB03B"
 }
+
+
+/* commons */
 
 .container {
   padding: 0 144px;
 }
 
+.text-span {
+  color: var(--primary-color);
+  font-weight: bold;
+}
 
-/* ○ Visual 
-○ Box
-○ Text 
-Color */
+
+/* layout */
+
+.flex {
+  display: flex;
+}
+
+.flex.f-row {
+  flex-direction: row;
+}
 
 .menu {
   height: 3rem;
@@ -20,6 +33,7 @@ Color */
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  background-color: gray;
 }
 
 .menu__logo img {
