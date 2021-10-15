@@ -1,228 +1,331 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fashion</title>
-  </head>
-  <body>
-    <header class="container">
-      <section id="menu">
-        <div class="row">
-          <div class="col">
-            <a><img alt="logo" /></a>
-          </div>
-          <div class="col">
-            <nav class="menu__category">
-              <ul>
-                <li><a href=""> Men</a></li>
-                <li><a href=""> Women</a></li>
-                <li><a href=""> Kids</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="col">
-            <div class="menu__functionalButton">
-              <a href=""><img alt="searchIcon" /></a>
-              <a href=""><img alt="cartIcon" /></a>
-              <a href=""><img alt="userIcon" /></a>
-            </div>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Shop</title>
+</head>
+
+<body>
+  <header class="container">
+    <div class="col">
+      <div class="menu-logo">
+        <a href="index.html"><img class="menu-logo-img" src="../assets/img/Logo.png" alt="E-shop" /></a>
+      </div>
+    </div>
+    <div class="col">
+      <nav class="menu-category">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#"><span class="text-span">Men</span></a>
+          </li>
+          <li class="list-group-item">
+            <a href="#"><span class="text-span">Women</span></a>
+          </li>
+          <li class="list-group-item">
+            <a href="#"><span class="text-span">Kids</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col">
+      <div class="menu-functional-button">
+        <ul class="menu-functional-button-list">
+          <li class="menu-functional-button-item">
+            <img class="icon" src="../assets/img/search-icon.png" alt="menu search button" />
+          </li>
+          <li class="menu-functional-button-item">
+            <img src="../assets/img/cart-icon.png" alt="menu cart button" />
+          </li>
+          <li class="menu-functional-button-item">
+            <img src="../assets/img/user-icon.png" alt="menu user button" />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>
+          Sale of the<br /><span class="text-span">summer</span
+            ><br />collection
+          </h1>
         </div>
-      </section>
-      <section id="hero">
-        <div class="hero__container">
-          <div class="hero__text">
-            <h1>Sale of the summer collection</h1>
-          </div>
-          <div class="hero__button">
-            <a href="">
-              <img src="" alt="shop now icon" />
-              <p>Shop now</p>
-            </a>
-          </div>
+        <div class="hero-button">
+          <a href="">
+            <img
+              src="../assets/img/arrow-right.png"
+              alt="hero redirect button"
+            />
+            <p>Shop now</p>
+          </a>
         </div>
-      </section>
-      <section id="pill">
-        <div class="row">
-          <div class="col">
-            <div class="pill__item--icon"></div>
-            <div class="pill__item--title"></div>
-            <div class="pill__item--desc"></div>
-          </div>
-          <div class="col">
-            <div class="pill__item--icon"></div>
-            <div class="pill__item--title"></div>
-            <div class="pill__item--desc"></div>
-          </div>
-          <div class="col">
-            <div class="pill__item--icon"></div>
-            <div class="pill__item--title"></div>
-            <div class="pill__item--desc"></div>
-          </div>
-        </div>
-      </section>
-    </header>
-    <main class="container">
-      <section id="banner">
-        <div class="row">
-          <div class="col">
-            <div class="banner__item">
-              <img src="" alt="banner" class="banner__item--img" />
-              <p class="banner__item--title"></p>
-              <a href="" class="banner__item--link"></a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="col">
-              <div class="banner__item">
-                <img src="" alt="banner" class="banner__item--img" />
-                <p class="banner__item--title"></p>
-                <a href="" class="banner__item--link"></a>
+        <div class="pill">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="pill-item">
+                <img
+                  class="pill-item-icon"
+                  src="../assets/img/shipping-icon.png"
+                  alt="pill shipping"
+                />
+                <p class="pill-item-title">Free Shipping</p>
+                <p class="pill-item-desc">On purchases over $199</p>
               </div>
-            </div>
-            <div class="col">
-              <div class="banner__item">
-                <img src="" alt="banner" class="banner__item--img" />
-                <p class="banner__item--title"></p>
-                <a href="" class="banner__item--link"></a>
+            </li>
+            <li class="list-group-item">
+              <div class="pill-item">
+                <img
+                  class="pill-item-icon"
+                  src="../assets/img/happy-icon.png"
+                  alt="pill satisfied"
+                />
+                <p class="pill-item-title">99% Satisfied Customers</p>
+                <p class="pill-item-desc">
+                  Our clients' opinions speak for themselves
+                </p>
               </div>
-            </div>
-          </div>
+            </li>
+            <li class="list-group-item">
+              <div class="pill-item">
+                <img
+                  class="pill-item-icon"
+                  src="../assets/img/guarantee-icon.png"
+                  alt="pill warranty"
+                />
+                <p class="pill-item-title">Originality Guaranteed</p>
+                <p class="pill-item-desc">
+                  30 days warranty for each product from our store
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
-      <section id="selected">
+
+      <section class="banner container">
+        <ul class="list-group">
+          <li class="list-group-item flex-2">
+            <div class="banner-item">
+              <img src="" alt="banner image" class="banner-item-img" />
+              <p class="banner-item-title">New arrivals are now in!</p>
+              <a href="#" class="banner-item-link">SHOW COLLECTION</a>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="banner-item">
+              <img src="" alt="banner image" class="banner-item-img" />
+              <p class="banner-item-title">Basic t-shirts $29,99</p>
+              <a href="#" class="banner-item-link">MORE DETAILS</a>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="banner-item">
+              <img src="" alt="banner image" class="banner-item-img" />
+              <p class="banner-item-title">Sale this summer</p>
+              <a href="#" class="banner-item-link">VIEW ALL</a>
+              <p class="banner-item-promo">-50%</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="selected container">
         <div class="row">
-          <h2>Selected just for you</h2>
-          <button>Show more</button>
+          <h2 class="selected-title">Selected just for you</h2>
+          <button class="btn btn-default-bordered selected-link">
+            Show more
+          </button>
         </div>
         <div class="row">
-          <div class="col">
-            <div class="selected__item">
-              <img src="" alt="selected item" class="selected__item--img" />
-              <p class="selected__item--title"></p>
-              <p class="selected__item--price"></p>
-              <p class="selected__item--promotion"></p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="selected__item">
-              <img src="" alt="selected item" class="selected__item--img" />
-              <p class="selected__item--title"></p>
-              <p class="selected__item--price"></p>
-              <p class="selected__item--promotion"></p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="selected__item">
-              <img src="" alt="selected item" class="selected__item--img" />
-              <p class="selected__item--title"></p>
-              <p class="selected__item--price"></p>
-              <p class="selected__item--promotion"></p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="selected__item">
-              <img src="" alt="selected item" class="selected__item--img" />
-              <p class="selected__item--title"></p>
-              <p class="selected__item--price"></p>
-              <p class="selected__item--promotion"></p>
-            </div>
-          </div>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="product">
+                <img
+                  src="../assets//img/home-product-1.png"
+                  alt="selected product"
+                  class="product-img"
+                />
+                <p class="product-title">T-Shirt Summer Vibes</p>
+                <p class="product-price">$89.99</p>
+                <p class="product-price-origin">$119.99</p>
+
+                <p class="product-promo">-30%</p>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="product">
+                <img
+                  src="../assets/img/home-product-2.png"
+                  alt="selected product"
+                  class="product-img"
+                />
+                <p class="product-title">Loose Knit 3/4 Sleeve</p>
+                <p class="product-price">$119.99</p>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="product">
+                <img
+                  src="../assets/img/home-product-3.png"
+                  alt="selected product"
+                  class="product-img"
+                />
+                <p class="product-title">Basic Slim Fit T-Shirt</p>
+                <p class="product-price">$79.99</p>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="product">
+                <img
+                  src="../assets/img/home-product-4.png"
+                  alt="selected product"
+                  class="product-img"
+                />
+                <p class="product-title">Loose Textured T-Shirt</p>
+                <p class="product-price">$119.99</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
-      <section id="chosenReason">
+      <section class="chosen-reason container">
         <div class="row">
-          <h2>Why should you choose us?</h2>
+          <h2 class=".chosen-reason-title">Why should you choose us?</h2>
         </div>
         <div class="row">
-          <div class="col">
-            <img src="" alt="reason why icon" class="chosenReason__item--img" />
-            <p class="chosenReason__item--title"></p>
-            <p class="chosenReason__item--desc"></p>
-          </div>
-          <div class="col">
-            <img src="" alt="reason why icon" class="chosenReason__item--img" />
-            <p class="chosenReason__item--title"></p>
-            <p class="chosenReason__item--desc"></p>
-          </div>
-          <div class="col">
-            <img src="" alt="reason why icon" class="chosenReason__item--img" />
-            <p class="chosenReason__item--title"></p>
-            <p class="chosenReason__item--desc"></p>
-          </div>
-          <div class="col">
-            <img src="" alt="reason why icon" class="chosenReason__item--img" />
-            <p class="chosenReason__item--title"></p>
-            <p class="chosenReason__item--desc"></p>
-          </div>
-        </div>
-      </section>
-      <section id="todayProduct">
-        <div class="row">
-          <h2 class="todayProduct__title">Products in today</h2>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="todayProduct__item">
-              <img
-                src=""
-                alt="todayProduct item"
-                class="todayProduct__item--img"
-              />
-              <p class="todayProduct__item--title"></p>
-              <p class="todayProduct__item--price"></p>
-              <p class="todayProduct__item--promotion"></p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="todayProduct__item">
-              <img
-                src=""
-                alt="todayProduct item"
-                class="todayProduct__item--img"
-              />
-              <p class="todayProduct__item--title"></p>
-              <p class="todayProduct__item--price"></p>
-              <p class="todayProduct__item--promotion"></p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="todayProduct__item">
-              <img
-                src=""
-                alt="todayProduct item"
-                class="todayProduct__item--img"
-              />
-              <p class="todayProduct__item--title"></p>
-              <p class="todayProduct__item--price"></p>
-              <p class="todayProduct__item--promotion"></p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="todayProduct__item">
-              <img
-                src=""
-                alt="todayProduct item"
-                class="todayProduct__item--img"
-              />
-              <p class="todayProduct__item--title"></p>
-              <p class="todayProduct__item--price"></p>
-              <p class="todayProduct__item--promotion"></p>
-            </div>
-          </div>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="chosen-reason-item">
+                <img
+                  src="../assets/img/shipping-icon-default.png"
+                  alt="chosen reason"
+                  class="chosen-reason-item-img"
+                />
+                <p class="chosen-reason-item-title">Free Shipping</p>
+                <p class="chosen-reason-item-desc">
+                  All purchases over $199 are eligible forfree shipping via USPS
+                  First Class Mail.
+                </p>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="chosen-reason-item">
+                <img
+                  src="../assets/img/payment-icon-default.png"
+                  alt="chosen reason"
+                  class="chosen-reason-item-img"
+                />
+                <p class="chosen-reason-item-title">Easy Payments</p>
+                <p class="chosen-reason-item-desc">
+                  All payments are processed instantlyover a secure payment
+                  protocol.
+                </p>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="chosen-reason-item">
+                <img
+                  src="../assets/img/guarantee-icon-default.png"
+                  alt="chosen reason"
+                  class="chosen-reason-item-img"
+                />
+                <p class="chosen-reason-item-title">Money-Back Guarantee</p>
+                <p class="chosen-reason-item-desc">
+                  If an item arrived damaged or you'vechanged your mind, you can
+                  send itback for a full refund.
+                </p>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="chosen-reason-item">
+                <img
+                  src="../assets/img/material-icon-default.png"
+                  alt="chosen reason"
+                  class="chosen-reason-item-img"
+                />
+                <p class="chosen-reason-item-title">Finest Quality</p>
+                <p class="chosen-reason-item-desc">
+                  Designed to last, each of our products hasbeen crafted with
+                  the finest materials.
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
-      <aside id="subcribe">
+      <section class="today-product container">
+        <div class="row">
+          <h2 class="today-product-title">Products in today</h2>
+        </div>
+        <div class="row">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="product">
+                <img
+                  src="../assets//img/home-product-1.png"
+                  alt="today product"
+                  class="product-img"
+                />
+                <p class="product-title">T-Shirt Summer Vibes</p>
+                <p class="product-price">$89.99</p>
+                <p class="product-price-origin">$119.99</p>
+
+                <p class="product-promo">-30%</p>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="product">
+                <img
+                  src="../assets/img/home-product-2.png"
+                  alt="today product"
+                  class="product-img"
+                />
+                <p class="product-title">Loose Knit 3/4 Sleeve</p>
+                <p class="product-price">$119.99</p>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="product">
+                <img
+                  src="../assets/img/home-product-3.png"
+                  alt="today product"
+                  class="product-img"
+                />
+                <p class="product-title">Basic Slim Fit T-Shirt</p>
+                <p class="product-price">$79.99</p>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="product">
+                <img
+                  src="../assets/img/home-product-4.png"
+                  alt="today product"
+                  class="product-img"
+                />
+                <p class="product-title">Loose Textured T-Shirt</p>
+                <p class="product-price">$119.99</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <aside class="subcribe container">
         <div class="col">
-          <h2 class="subcribe__title">
+          <h2 class="subcribe-title">
             Subscribe to our newsletter andreceive exclusive offers every week
           </h2>
         </div>
         <div class="col">
-          <form class="subcribe__form">
-            <input type="text" name="email" placeholder="Enter your email" />
-            <button type="submit">Subcribe</button>
+          <form class="subcribe-form">
+            <input
+              class="input"
+              type="text"
+              name="email"
+              placeholder="Enter your email"
+            />
+            <button class="btn btn-primary" type="submit">Subcribe</button>
           </form>
         </div>
       </aside>
@@ -230,71 +333,106 @@
     <footer class="container">
       <div class="row">
         <div class="col">
-          <article class="brandStory">
-            <img src="" alt="brand story image" class="brandStory__img" />
-            <p class="brandStory__detail"></p>
+          <article class="brand-story">
+            <img src="" alt="brand story logo image" class="brand-story-img" />
+            <p class="brand-story-detail">
+              House My Brand designs clothing for the young, the old &everyone
+              in between – but most importantly, for the fashionable
+            </p>
           </article>
-          <div class="socialLink">
-            <ul>
-              <li>
-                <a href="" class="socialLink__item"
-                  ><img src="" alt="facebook-icon"
+          <div class="social">
+            <ul class="social-list">
+              <li class="social-item">
+                <a href=""
+                  ><img
+                    src="../assets/img/facebook-logo.png"
+                    alt="social link facebook"
                 /></a>
               </li>
-              <li>
-                <a href="" class="socialLink__item"
-                  ><img src="" alt="twitter-icon"
+              <li class="social-item">
+                <a href=""
+                  ><img
+                    src="../assets/img/twitter-logo.png"
+                    alt="social link twitter"
                 /></a>
               </li>
-              <li>
-                <a href="" class="socialLink__item"
-                  ><img src="" alt="linkedIn-icon"
+              <li class="social-item">
+                <a href=""
+                  ><img
+                    src="../assets/img/linkedin-logo.png"
+                    alt="social link linked-in"
                 /></a>
               </li>
-              <li>
-                <a href="" class="socialLink__item"
-                  ><img src="" alt="instagram-icon"
+              <li class="social-item">
+                <a href=""
+                  ><img
+                    src="../assets/img/instagram-logo.png"
+                    alt="social link instagram"
                 /></a>
               </li>
-              <li>
-                <a href="" class="socialLink__item"
-                  ><img src="" alt="youtube-icon"
+              <li class="social-item">
+                <a href=""
+                  ><img
+                    src="../assets/img/youtube-logo.png"
+                    alt="social link youtube"
                 /></a>
               </li>
             </ul>
           </div>
         </div>
         <div class="col">
-          <div class="col">
-            <p class="navLink__title">Shopping online</p>
-            <ul>
-              <li class="navLink__item"><a href="">Order Status</a></li>
-              <li class="navLink__item">
+          <div class="nav-link">
+            <p class="nav-link-title">Shopping online</p>
+            <ul class="list-group">
+              <li class="list-group-item"><a href="">Order Status</a></li>
+              <li class="list-group-item">
                 <a href="">Shipping and Delivery</a>
               </li>
-              <li class="navLink__item"><a href="">Returns</a></li>
-              <li class="navLink__item"><a href="">Payment Options</a></li>
-              <li class="navLink__item"><a href="">Contact Us</a></li>
+              <li class="list-group-item"><a href="">Returns</a></li>
+              <li class="list-group-item"><a href="">Payment Options</a></li>
+              <li class="list-group-item"><a href="">Contact Us</a></li>
             </ul>
           </div>
-          <div class="col">
-            <p class="navLink__title">Information</p>
-            <ul>
-              <li class="navLink__item"><a href="">Gift Cards</a></li>
-              <li class="navLink__item"><a href="">Find a store</a></li>
-              <li class="navLink__item"><a href="">Newsletter</a></li>
-              <li class="navLink__item"><a href="">Become a member</a></li>
-              <li class="navLink__item"><a href="">Site feedback</a></li>
+          <div class="nav-link">
+            <p class="nav-link-title">Information</p>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a href="">
+                  <p class="list-group-item-text">Gift Cards</p>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a href="">
+                  <p class="nav-link-item-text">Find a store</p>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a href="">
+                  <p class="nav-link-item-text">Newsletter</p>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a href="">
+                  <p class="nav-link-item-text">Become a member</p>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a href="">
+                  <p class="nav-link-item-text">Site feedback</p>
+                </a>
+              </li>
             </ul>
           </div>
-          <div class="col">
-            <div class="col">
-              <p class="navLink__title">Contact</p>
-              <ul>
-                <li class="navLink__item">store@uikit.com</li>
-                <li class="navLink__item">Hotline: +1 131 138 138</li>
-              </ul>
-            </div>
+          <div class="nav-link">
+            <p class="nav-link-title">Contact</p>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <p class="nav-link-item-text">store@uikit.com</p>
+              </li>
+              <li class="list-group-item">
+                <p class="nav-link-item-text">Hotline: +1 131 138 138</p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
