@@ -1,0 +1,72 @@
+:root {
+  --primary-color: "#FBB03B"
+}
+
+
+/* base */
+
+
+/* commons */
+
+.container {
+  padding: 0 144px;
+}
+
+.text-span {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.icon {
+  height: 1.5rem;
+  width: auto;
+}
+
+.background-img {
+  position: absolute;
+  width: 100%;
+  filter: brightness(50%);
+  z-index: -100;
+}
+
+
+/* layout */
+
+.f-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.f-row.f-center-x {
+  align-items: center;
+}
+
+.f-row.f-center-y {
+  justify-content: center;
+}
+
+
+/* header */
+
+.header {
+  background: transparent;
+  position: absolute;
+  top: 0;
+}
+
+.menu-logo {
+  height: 3rem;
+}
+
+.menu-logo-img {
+  /* object-fit: contain; */
+  max-height: 80%;
+  width: auto;
+}
+
+
+/* hero */
+
+.hero {
+  position: relative;
+}
