@@ -1,5 +1,5 @@
 :root {
-  --primary-color: "#FBB03B"
+  --primary-color: #FBB03B
 }
 
 
@@ -22,11 +22,16 @@
   width: auto;
 }
 
+
+/* .img {
+  object-fit: contain;
+} */
+
 .background-img {
   position: absolute;
-  width: 100%;
   filter: brightness(50%);
   z-index: -100;
+  width: 100%;
 }
 
 
@@ -41,17 +46,60 @@
   align-items: center;
 }
 
-.f-row.f-center-y {
-  justify-content: center;
+.f-row.f-justify-between {
+  justify-content: space-between;
 }
+
+.f-row.f-justify-around {
+  justify-content: space-around;
+}
+
+.f-row.f-justify-end {
+  justify-content: flex-end;
+}
+
+.f-row .col {
+  flex: 1;
+}
+
+.f-row .col-2 {
+  flex: 2
+}
+
+.f-row .col-4 {
+  flex: 4
+}
+
+.list-group {
+  display: flex;
+}
+
+.list-group.list-justify-end {
+  justify-content: flex-end;
+}
+
+.list-group.list-justify-start {
+  justify-content: flex-start;
+}
+
+.list-group.list-justify-between {
+  justify-content: space-between;
+}
+
+.list-group.list-justify-around {
+  justify-content: space-around;
+}
+
+.list-group .list-group-item {}
 
 
 /* header */
 
 .header {
-  background: transparent;
+  width: 100%;
   position: absolute;
-  top: 0;
+  top: 3rem;
+  z-index: 100;
 }
 
 .menu-logo {
@@ -59,9 +107,14 @@
 }
 
 .menu-logo-img {
-  /* object-fit: contain; */
-  max-height: 80%;
+  height: 72.5%;
   width: auto;
+}
+
+.menu-functional {
+  margin-right: 0;
+  margin-left: auto;
+  width: 120px;
 }
 
 
@@ -69,4 +122,17 @@
 
 .hero {
   position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-content {
+  margin-left: 240px;
+}
+
+.pill {
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
 }

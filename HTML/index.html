@@ -10,60 +10,71 @@
 </head>
 
 <body>
-  <header class="header container f-row f-center-x f-center-y">
-    <div class="col">
-      <div class="menu-logo">
-        <a href="index.html"><img class="menu-logo-img" src="../assets/img/Logo.png" alt="E-shop" /></a>
+  <header class="header">
+    <div class="container f-row f-center-x f-justify-between">
+      <div class="col">
+        <div class="menu-logo f-row f-center-x">
+          <a href="index.html"><img class="menu-logo-img" src="../assets/img/Logo.png" alt="E-shop" /></a>
+        </div>
       </div>
-    </div>
-    <div class="col">
-      <nav class="menu-category">
-        <ul class="list-group">
-          <li class="list-group-item">
-            <a href="#"><span class="text-span">Men</span></a>
-          </li>
-          <li class="list-group-item">
-            <a href="#"><span class="text-span">Women</span></a>
-          </li>
-          <li class="list-group-item">
-            <a href="#"><span class="text-span">Kids</span></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="col">
-      <div class="menu-functional-button">
-        <ul class="menu-functional-button-list">
-          <li class="menu-functional-button-item">
-            <img class="icon" src="../assets/img/search-icon.png" alt="menu search button" />
-          </li>
-          <li class="menu-functional-button-item">
-            <img class="icon" src="../assets/img/cart-icon.png" alt="menu cart button" />
-          </li>
-          <li class="menu-functional-button-item">
-            <img class="icon" src="../assets/img/user-icon.png" alt="menu user button" />
-          </li>
-        </ul>
+      <div class="col-2">
+        <nav class="menu-category">
+          <ul class="list-group list-justify-around">
+            <li class="list-group-item">
+              <a href="#"><span class="text-span">Men</span></a>
+            </li>
+            <li class="list-group-item">
+              <a href="#"><span class="text-span">Women</span></a>
+            </li>
+            <li class="list-group-item">
+              <a href="#"><span class="text-span">Kids</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col">
+        <div class="menu-functional">
+          <ul class="list-group list-justify-between">
+            <li class="list-group-item">
+              <div class="menu-funtional-item">
+                <img class="icon" src="../assets/img/search-icon.png" alt="menu search button" />
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="menu-funtional-item">
+                <img class="icon" src="../assets/img/cart-icon.png" alt="menu cart button" />
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="menu-funtional-item">
+                <img class="icon" src="../assets/img/user-icon.png" alt="menu user button" />
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
   <main>
     <section class="hero">
-      <img src="../assets/img/home-banner.png" alt="hero banner" class="background-img" />
-      <div class="hero-text">
-        <h1>
-          Sale of the<br /><span class="text-span">summer</span
-            ><br />collection
-          </h1>
-        </div>
-        <div class="hero-button">
-          <a href="">
-            <img
-              src="../assets/img/arrow-right.png"
-              alt="hero redirect button"
-            />
-            <p>Shop now</p>
-          </a>
+      <img src="../assets/img/home-banner.png" alt="hero banner" class="img background-img" />
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>
+            Sale of the<br /><span class="text-span">summer</span
+              ><br />collection
+            </h1>
+          </div>
+          <div class="hero-button">
+            <a href="">
+              <img
+                class="icon"
+                src="../assets/img/arrow-right.png"
+                alt="hero redirect button"
+              />
+              <p>Shop now</p>
+            </a>
+          </div>
         </div>
         <div class="pill">
           <ul class="list-group">
@@ -148,12 +159,13 @@
                 <img
                   src="../assets//img/home-product-1.png"
                   alt="selected product"
-                  class="product-img"
+                  class="img product-img"
                 />
                 <p class="product-title">T-Shirt Summer Vibes</p>
-                <p class="product-price">$89.99</p>
-                <p class="product-price-origin">$119.99</p>
-
+                <div class="f-row f-justify-between">
+                  <p class="product-price">$89.99</p>
+                  <p class="product-price-origin">$119.99</p>
+                </div>
                 <p class="product-promo">-30%</p>
               </div>
             </li>
@@ -162,10 +174,12 @@
                 <img
                   src="../assets/img/home-product-2.png"
                   alt="selected product"
-                  class="product-img"
+                  class="img product-img"
                 />
                 <p class="product-title">Loose Knit 3/4 Sleeve</p>
-                <p class="product-price">$119.99</p>
+                <div class="f-row f-justify-between">
+                  <p class="product-price">$119.99</p>
+                </div>
               </div>
             </li>
             <li class="list-group-item">
@@ -173,21 +187,29 @@
                 <img
                   src="../assets/img/home-product-3.png"
                   alt="selected product"
-                  class="product-img"
+                  class="img product-img"
                 />
                 <p class="product-title">Basic Slim Fit T-Shirt</p>
-                <p class="product-price">$79.99</p>
+                <div class="f-row f-justify-between">
+                  <p class="product-price">$79.99</p>
+                </div>
               </div>
             </li>
             <li class="list-group-item">
               <div class="product">
-                <img
-                  src="../assets/img/home-product-4.png"
-                  alt="selected product"
-                  class="product-img"
-                />
-                <p class="product-title">Loose Textured T-Shirt</p>
-                <p class="product-price">$119.99</p>
+                <div class="f-row">
+                  <img
+                    src="../assets/img/home-product-4.png"
+                    alt="selected product"
+                    class="img product-img"
+                  />
+                </div>
+                <div class="f-row">
+                  <p class="product-title">Loose Textured T-Shirt</p>
+                </div>
+                <div class="f-row f-justify-between">
+                  <p class="product-price">$119.99</p>
+                </div>
               </div>
             </li>
           </ul>
@@ -273,7 +295,7 @@
                 <img
                   src="../assets//img/home-product-1.png"
                   alt="today product"
-                  class="product-img"
+                  class="img product-img"
                 />
                 <p class="product-title">T-Shirt Summer Vibes</p>
                 <p class="product-price">$89.99</p>
@@ -287,7 +309,7 @@
                 <img
                   src="../assets/img/home-product-2.png"
                   alt="today product"
-                  class="product-img"
+                  class="img product-img"
                 />
                 <p class="product-title">Loose Knit 3/4 Sleeve</p>
                 <p class="product-price">$119.99</p>
@@ -298,7 +320,7 @@
                 <img
                   src="../assets/img/home-product-3.png"
                   alt="today product"
-                  class="product-img"
+                  class="img product-img"
                 />
                 <p class="product-title">Basic Slim Fit T-Shirt</p>
                 <p class="product-price">$79.99</p>
@@ -309,7 +331,7 @@
                 <img
                   src="../assets/img/home-product-4.png"
                   alt="today product"
-                  class="product-img"
+                  class="img product-img"
                 />
                 <p class="product-title">Loose Textured T-Shirt</p>
                 <p class="product-price">$119.99</p>
@@ -319,29 +341,34 @@
         </div>
       </section>
       <aside class="subcribe container">
-        <div class="col">
-          <h2 class="subcribe-title">
-            Subscribe to our newsletter andreceive exclusive offers every week
-          </h2>
-        </div>
-        <div class="col">
-          <form class="subcribe-form">
-            <input
-              class="input"
-              type="text"
-              name="email"
-              placeholder="Enter your email"
-            />
-            <button class="btn btn-primary" type="submit">Subcribe</button>
-          </form>
-        </div>
+        <!-- <img
+          class="img background-img"
+          src="../assets/img/home-newsletter.png"
+          alt="subcribe newsletter"
+        /> -->
+        <h2 class="subcribe-title">
+          Subscribe to our newsletter andreceive exclusive offers every week
+        </h2>
+        <form class="subcribe-form">
+          <input
+            class="input"
+            type="text"
+            name="email"
+            placeholder="Enter your email"
+          />
+          <button class="btn btn-primary" type="submit">Subcribe</button>
+        </form>
       </aside>
     </main>
     <footer class="container">
       <div class="row">
         <div class="col">
           <article class="brand-story">
-            <img src="" alt="brand story logo image" class="brand-story-img" />
+            <!-- <img
+              src="../assets/img/Logo.png"
+              alt="brand story logo image"
+              class="img brand-story-img"
+            /> -->
             <p class="brand-story-detail">
               House My Brand designs clothing for the young, the old &everyone
               in between – but most importantly, for the fashionable
