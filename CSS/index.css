@@ -13,6 +13,7 @@ section {
 /* commons */
 
 .container {
+  width: 100%;
   padding: 0 144px;
 }
 
@@ -147,7 +148,8 @@ section {
   justify-content: space-around;
 }
 
-.list-group .list-group-item {}
+
+/* .list-group .list-group-item {} */
 
 
 /* header */
