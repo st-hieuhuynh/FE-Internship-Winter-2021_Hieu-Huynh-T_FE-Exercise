@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/index.css" />
   <title>E-Shop</title>
@@ -13,7 +16,7 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="row">
+      <div class="row f-center-x">
         <div class="col-4">
           <div class="menu-logo">
             <h1>
@@ -22,21 +25,18 @@
           </div>
         </div>
         <div class="col-4">
-          <nav class="menu-category">
-            <ul class="list-group">
+          <nav class="menu-category ">
+            <ul class="list-group row">
               <li class="list-group-item">
-                <a href="#">
-                  <h4 class="text-primary">Men</h4>
+                <a class="text-primary" href="#">Men</a>
+              </li>
+              <li class="list-group-item">
+                <a class="text-primary" href="#">
+                  Women
                 </a>
               </li>
               <li class="list-group-item">
-                <a href="#">
-                  <h4 class="text-primary">Women</h4>
-                </a>
-              </li>
-              <li class="list-group-item">
-                <a href="#">
-                  <h4 class="text-primary">Kids</h4>
+                <a class="text-primary" href="#">Kids
                 </a>
               </li>
             </ul>
@@ -62,6 +62,7 @@
   </header>
   <main class="main">
     <section class="hero">
+      <img src="./assets/img/home-banner-desktop.png" alt="Sale of the summer collection" class="background-img">
       <div class="container">
         <div class="hero-text">
           <h2>
@@ -109,21 +110,21 @@
         <ul class="row">
           <li class="col-6">
             <div class="banner-item">
-              <img src="./assets/img/home-1.png" alt="New arrivals are now in!" class="banner-item-img" />
+              <img src="./assets/img/home-1.png" alt="New arrivals are now in!" class="banner-item-img background-img" />
               <h3 class="banner-item-title">New arrivals are now in!</h3>
               <a href="#" class="btn btn-default">SHOW COLLECTION</a>
             </div>
           </li>
           <li class="col-3">
             <div class="banner-item">
-              <img src="./assets/img/home-2.png" alt="Basic t-shirts $29,99" class="banner-item-img" />
+              <img src="./assets/img/home-2.png" alt="Basic t-shirts $29,99" class="banner-item-img background-img" />
               <h3 class="banner-item-title">Basic t-shirts $29,99</h3>
               <a href="#" class="btn btn-default">MORE DETAILS</a>
             </div>
           </li>
           <li class="col-3">
             <div class="banner-item">
-              <img src="./assets/img/home-3.png" alt="Sale this summer" class="banner-item-img" />
+              <img src="./assets/img/home-3.png" alt="Sale this summer" class="banner-item-img background-img" />
               <h3 class="banner-item-title">Sale this summer</h3>
               <a href="#" class="btn btn-default">VIEW ALL</a>
               <span class="badge banner-item-promo">-50%</span>
@@ -290,7 +291,7 @@
         <div class="col-5">
           <article class="brand-story">
             <h3>
-              <img src="./assets/img/Logo.png" alt="E-shop" class="brand-story-img" />
+              <img src="./assets/img/Logo.png" alt="E-shop" class="brand-story-img menu-logo-img" />
             </h3>
             <p class="brand-story-detail">
               House My Brand designs clothing for the young, the old &everyone in between – but most importantly, for the fashionable

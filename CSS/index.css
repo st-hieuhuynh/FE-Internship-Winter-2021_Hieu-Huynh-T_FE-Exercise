@@ -5,7 +5,35 @@
 
 /* base */
 
+html {
+  font-family: Poppins, sans-serif;
+}
+
 section {
+  width: 100%;
+}
+
+h2 {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 0.875rem;
+}
+
+img {
+  object-fit: cover;
   width: 100%;
 }
 
@@ -13,13 +41,12 @@ section {
 /* commons */
 
 .container {
-  width: 100%;
+  max-width: 100%;
   padding: 0 144px;
 }
 
-.text-span {
+.text-primary {
   color: var(--primary-color);
-  font-weight: bold;
 }
 
 .icon {
@@ -27,44 +54,45 @@ section {
   width: auto;
 }
 
-
-/* .img {
-  object-fit: contain;
-} */
-
 .background-img {
-  position: absolute;
   filter: brightness(50%);
   z-index: -100;
-  width: 100%;
 }
 
 
 /* layout */
 
-.f-row {
+.row {
   display: flex;
   flex-direction: row;
   width: 100%;
+  margin: 0 -10px;
 }
 
-.f-row.f-center-x {
+.row>* {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 10px;
+}
+
+.row.f-center-x {
   align-items: center;
 }
 
-.f-row.f-justify-between {
+.row.f-justify-between {
   justify-content: space-between;
 }
 
-.f-row.f-justify-around {
+.row.f-justify-around {
   justify-content: space-around;
 }
 
-.f-row.f-justify-end {
+.row.f-justify-end {
   justify-content: flex-end;
 }
 
-.f-row .col {
+.row .col {
   flex: 1;
 }
 
@@ -166,7 +194,7 @@ section {
 }
 
 .menu-logo-img {
-  height: 72.5%;
+  height: 2.175rem;
   width: auto;
 }
 
@@ -186,12 +214,15 @@ section {
   overflow: hidden;
 }
 
-.hero-content {
-  margin-left: 240px;
-}
-
 .pill {
   position: absolute;
   bottom: 0;
   background-color: #fff;
+}
+
+
+/* banner */
+
+.banner-item-img {
+  /* width: 100%; */
 }
