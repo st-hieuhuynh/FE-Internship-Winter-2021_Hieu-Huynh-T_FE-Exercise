@@ -1,0 +1,10 @@
+.list-group {
+	position: relative;
+	display: flex;
+	& .list-column {
+		flex-direction: column;
+	}
+	& -item {
+		position: relative;
+	}
+}

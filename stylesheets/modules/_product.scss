@@ -1,0 +1,22 @@
+.product {
+	position: relative;
+	&-img {
+		margin-bottom: 1rem;
+	}
+	&-price {
+		font-size: 1.25rem;
+		display: flex;
+		&.new-price {
+			color: map-get($map: $color, $key: red);
+			margin-right: auto;
+		}
+		&.old-price {
+			color: map-get($map: $color, $key: gray-3);
+		}
+	}
+	&-promo {
+		position: absolute;
+		top: 1.5rem;
+		left: 1rem;
+	}
+}

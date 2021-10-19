@@ -1,0 +1,30 @@
+.header {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	height: 3rem;
+	width: 100%;
+	padding-top: 3rem;
+	background-color: rgba($color: #000000, $alpha: 0.1);
+	.menu {
+		&-category {
+			font-weight: bold;
+		}
+		&-functional {
+			margin-right: 0;
+			margin-left: auto;
+			width: 120px;
+			.icon {
+				@include icon-size(2.175rem);
+			}
+		}
+		&-logo {
+			height: 3rem;
+			display: flex;
+			align-items: center;
+			h1 {
+				height: 72.5%;
+			}
+		}
+	}
+}

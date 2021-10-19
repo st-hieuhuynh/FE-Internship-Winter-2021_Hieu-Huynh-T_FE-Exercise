@@ -1,0 +1,53 @@
+$num-col: 12;
+.container {
+	width: 100%;
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 0.625rem;
+	.row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: 0 -0.625rem;
+		> * {
+			box-sizing: border-box;
+			width: 100%;
+			max-width: 100%;
+			padding: 0 0.625rem;
+		}
+		+ .f-center-x {
+			align-items: center;
+		}
+		.col {
+			flex: 1;
+		}
+		@for $i from 1 to $num-col {
+			.col-#{$i} {
+				flex: 0 0 auto;
+				width: ($i / $num-col) * 100%;
+			}
+		}
+	}
+	@include sm-screen {
+		max-width: map-get($map: $break-point, $key: small) - 20px;
+	}
+	@include md-screen {
+		max-width: map-get($map: $break-point, $key: medium) - 20px;
+	}
+	@include lg-screen {
+		max-width: map-get($map: $break-point, $key: large)-20px;
+	}
+	@include xl-screen {
+		max-width: map-get($map: $break-point, $key: extra-large) -20px;
+	}
+}
+.justify-between {
+	justify-content: space-between;
+}
+.justify-around {
+	justify-content: space-around;
+}
+.justify-end {
+	justify-content: flex-end;
+}
