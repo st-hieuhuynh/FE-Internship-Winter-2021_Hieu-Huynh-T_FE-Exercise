@@ -1,3 +1,4 @@
+@use "sass:math";
 $num-col: 12;
 .container {
 	width: 100%;
@@ -25,21 +26,21 @@ $num-col: 12;
 		@for $i from 1 to $num-col {
 			.col-#{$i} {
 				flex: 0 0 auto;
-				width: ($i / $num-col) * 100%;
+				width: math.div($i, $num-col) * 100%;
 			}
 		}
 	}
 	@include sm-screen {
-		max-width: map-get($map: $break-point, $key: small) - 20px;
+		max-width: map-get($map: $break-point, $key: small);
 	}
 	@include md-screen {
-		max-width: map-get($map: $break-point, $key: medium) - 20px;
+		max-width: map-get($map: $break-point, $key: medium);
 	}
 	@include lg-screen {
-		max-width: map-get($map: $break-point, $key: large)-20px;
+		max-width: map-get($map: $break-point, $key: large);
 	}
 	@include xl-screen {
-		max-width: map-get($map: $break-point, $key: extra-large) -20px;
+		max-width: map-get($map: $break-point, $key: extra-large);
 	}
 }
 .justify-between {

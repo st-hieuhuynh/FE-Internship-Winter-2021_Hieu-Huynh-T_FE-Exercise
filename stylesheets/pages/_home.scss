@@ -1,5 +1,5 @@
 .hero {
-	position: relative;
+	// position: relative;
 	height: 100vh;
 	width: 100%;
 	overflow: hidden;
@@ -20,11 +20,11 @@
 	}
 	&-text {
 		font-size: 4.5rem;
+		line-height: 4.5625rem;
 		font-weight: bold;
 	}
 	&-redirect {
 		font-size: 1.5rem;
-		line-height: 2.25rem;
 		text-decoration: underline;
 		&::before {
 			content: "";
@@ -79,7 +79,6 @@
 		}
 		&-desc {
 			font-size: 0.75rem;
-			line-height: 1.125rem;
 			color: map-get($map: $color, $key: gray-1);
 		}
 	}
@@ -95,10 +94,24 @@
 		}
 		&-title {
 			font-size: 1.5rem;
-			line-height: 2.25rem;
 			height: 4.5rem;
 			color: map-get($map: $color, $key: white);
 			margin-bottom: 1.175rem;
 		}
+	}
+}
+.subcribe {
+	background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.5) 10%,
+			rgba(0, 0, 0, 0) 90%
+		),
+		url(../assets/img/home-newsletter.png);
+	padding: 5.3125rem 0;
+	background-size: cover;
+	background-position: center;
+	&-title {
+		font-size: 1.5rem;
+		color: map-get($map: $color, $key: white);
 	}
 }

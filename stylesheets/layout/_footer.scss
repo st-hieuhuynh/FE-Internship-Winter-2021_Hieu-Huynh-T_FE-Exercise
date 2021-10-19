@@ -1,3 +1,15 @@
 .footer {
+	color: map-get($map: $color, $key: white);
 	background-color: map-get($map: $color, $key: primary);
+	.social {
+		img {
+			@include icon-size(1.25rem);
+		}
+	}
+}
+.copyright {
+	padding: 1.5rem;
+	border-top: 1px solid #fff;
+	font-size: 0.75rem;
+	text-align: center;
 }

@@ -3,10 +3,14 @@
 	font-family: inherit;
 }
 html {
-	font-family: $font-family-primary;
-	font-weight: normal;
+	font-size: $font-size;
 	color: map-get($map: $color, $key: black);
 	box-sizing: border-box;
+}
+body {
+	font-family: $font-family-primary;
+	font-weight: normal;
+	line-height: 1.5;
 }
 section {
 	width: 100%;
@@ -17,7 +21,6 @@ h2 {
 }
 h3 {
 	font-size: 2rem;
-	line-height: 3rem;
 	font-weight: 300;
 }
 h4 {
