@@ -12,16 +12,22 @@
 	<body>
 		<header class="header">
 			<div class="container">
-				<div class="row f-center-x">
-					<div class="col-4">
+				<div class="row f-center-x justify-between">
+					<div class="col-2">
 						<div class="menu-logo">
 							<h1>
-								<a href="index.html"
-									><img
-										class="logo-img"
+								<a href="index.html">
+									<img
+										class="logo-img desktop-screen"
 										src="./assets/img/Logo.png"
 										alt="E-shop"
-								/></a>
+									/>
+									<img
+										class="logo-img mobile-screen"
+										src="./assets/img/Logo-dark.png"
+										alt="E-shop"
+									/>
+								</a>
 							</h1>
 						</div>
 					</div>
@@ -40,31 +46,43 @@
 							</ul>
 						</nav>
 					</div>
-					<div class="col-4">
+					<div class="col-2">
 						<div class="menu-functional">
 							<ul class="list-group justify-between">
 								<li class="list-group-item">
 									<a href="#"
 										><img
-											class="icon"
+											class="icon desktop-screen"
 											src="./assets/img/search-icon.png"
+											alt="search"
+										/>
+										<img
+											class="icon mobile-screen"
+											src="./assets/img/cart-icon-dark.png"
+											alt="cart"
+										/>
+									</a>
+								</li>
+								<li class="list-group-item">
+									<a href="#"
+										><img
+											class="icon desktop-screen"
+											src="./assets/img/cart-icon.png"
+											alt="cart" /><img
+											class="icon mobile-screen"
+											src="./assets/img/user-icon-dark.png"
 											alt="search"
 									/></a>
 								</li>
 								<li class="list-group-item">
 									<a href="#"
 										><img
-											class="icon"
-											src="./assets/img/cart-icon.png"
-											alt="cart"
-									/></a>
-								</li>
-								<li class="list-group-item">
-									<a href="#"
-										><img
-											class="icon"
+											class="icon desktop-screen"
 											src="./assets/img/user-icon.png"
-											alt="user"
+											alt="user desktop-screen" /><img
+											class="icon mobile-screen"
+											src="./assets/img/menu-ham-dark.png"
+											alt="menu"
 									/></a>
 								</li>
 							</ul>
@@ -380,19 +398,19 @@
 					<div class="row f-center-x">
 						<div class="col-6">
 							<p class="subcribe-title">
-								Subscribe to our newsletter andreceive exclusive offers every
+								Subscribe to our newsletter and receive exclusive offers every
 								week
 							</p>
 						</div>
 						<div class="col-6">
 							<form class="subcribe-form row justify-between">
 								<input
-									class="col-7 input"
+									class="input"
 									type="email"
 									name="email"
 									placeholder="Enter your email"
 								/>
-								<button class="col-4 btn btn-primary unbordered" type="submit">
+								<button class="btn btn-primary unbordered" type="submit">
 									SUBCRIBE
 								</button>
 							</form>
@@ -464,53 +482,57 @@
 						</div>
 					</div>
 					<div class="col-7">
-						<ul class="list-group justify-between">
-							<li class="list-group-item">
-								<h4 class="nav-link-title mb-m">Shopping online</h4>
-								<ul class="list-group list-column gap-m">
-									<li class="list-group-item"><a href="#">Order Status</a></li>
-									<li class="list-group-item">
-										<a href="#">Shipping and Delivery</a>
-									</li>
-									<li class="list-group-item"><a href="#">Returns</a></li>
-									<li class="list-group-item">
-										<a href="#">Payment Options</a>
-									</li>
-									<li class="list-group-item"><a href="#">Contact Us</a></li>
-								</ul>
-							</li>
-							<li class="list-group-item">
-								<h4 class="nav-link-title mb-m">Information</h4>
-								<ul class="list-group list-column gap-m">
-									<li class="list-group-item">
-										<a href="#">Gift Cards </a>
-									</li>
-									<li class="list-group-item">
-										<a href="#">Find a store </a>
-									</li>
-									<li class="list-group-item">
-										<a href="#">Newsletter </a>
-									</li>
-									<li class="list-group-item">
-										<a href="#">Become a membe</a>
-									</li>
-									<li class="list-group-item">
-										<a href="#">Site feedback </a>
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item">
-								<h4 class="nav-link-title mb-m">Contact</h4>
-								<ul class="list-group list-column gap-m">
-									<li class="list-group-item">
-										<a href="#">store@uikit.com</a>
-									</li>
-									<li class="list-group-item">
-										<a href="#">Hotline: +1 131 138 138</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
+						<div class="nav-link">
+							<ul class="row justify-between">
+								<li class="list-group-item">
+									<h4 class="nav-link-title mb-m">Shopping online</h4>
+									<ul class="list-group list-column gap-m">
+										<li class="list-group-item">
+											<a href="#">Order Status</a>
+										</li>
+										<li class="list-group-item">
+											<a href="#">Shipping and Delivery</a>
+										</li>
+										<li class="list-group-item"><a href="#">Returns</a></li>
+										<li class="list-group-item">
+											<a href="#">Payment Options</a>
+										</li>
+										<li class="list-group-item"><a href="#">Contact Us</a></li>
+									</ul>
+								</li>
+								<li class="list-group-item">
+									<h4 class="nav-link-title mb-m">Information</h4>
+									<ul class="list-group list-column gap-m">
+										<li class="list-group-item">
+											<a href="#">Gift Cards </a>
+										</li>
+										<li class="list-group-item">
+											<a href="#">Find a store </a>
+										</li>
+										<li class="list-group-item">
+											<a href="#">Newsletter </a>
+										</li>
+										<li class="list-group-item">
+											<a href="#">Become a membe</a>
+										</li>
+										<li class="list-group-item">
+											<a href="#">Site feedback </a>
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item">
+									<h4 class="nav-link-title mb-m">Contact</h4>
+									<ul class="list-group list-column gap-m">
+										<li class="list-group-item">
+											<a href="#">store@uikit.com</a>
+										</li>
+										<li class="list-group-item">
+											<a href="#">Hotline: +1 131 138 138</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
