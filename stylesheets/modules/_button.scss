@@ -18,3 +18,6 @@
 		background-color: map-get($map: $color, $key: primary);
 	}
 }
+.unbordered {
+	border: none;
+}

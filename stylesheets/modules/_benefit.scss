@@ -1,0 +1,19 @@
+.benefit {
+	padding: 3rem 0;
+	background-color: #f7f7f7;
+	&-item {
+		width: 85%;
+		img {
+			height: 4rem;
+			width: 4rem;
+			border-radius: 5px;
+		}
+		&-title {
+			font-weight: bold;
+			padding-bottom: 1rem;
+		}
+		&-desc {
+			color: var(--color-gray-2);
+		}
+	}
+}

@@ -1,6 +1,15 @@
+@use "sass:math";
 @mixin icon-size($size) {
 	height: $size;
 	width: $size;
+}
+@mixin col-generate($num-col) {
+	@for $i from 1 to $num-col {
+		.col-#{$i} {
+			flex: 0 0 auto;
+			width: math.div($i, $num-col) * 100%;
+		}
+	}
 }
 //Small Screen
 @mixin sm-screen {
