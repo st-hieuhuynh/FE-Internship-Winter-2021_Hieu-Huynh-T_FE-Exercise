@@ -1,0 +1,6 @@
+.text-center {
+	text-align: center;
+}
+.text-primary {
+	color: map-get($map: $color, $key: primary);
+}

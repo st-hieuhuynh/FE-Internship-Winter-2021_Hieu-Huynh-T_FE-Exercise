@@ -15,8 +15,6 @@
 	--size-xl: 3rem;
 	--size-xxl: 6rem;
 	--border-gray: 1px solid #c4c4c4;
-	--image-filter-orange: invert(67%) sepia(80%) saturate(471%)
-		hue-rotate(339deg) brightness(103%) contrast(97%);
 }
 /* base */
 * {

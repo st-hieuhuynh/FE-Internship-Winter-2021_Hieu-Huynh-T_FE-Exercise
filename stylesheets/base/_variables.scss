@@ -1,14 +1,21 @@
 // Color
-$color-primary: #fbb03b;
-$color-white: #fff;
-$color-black: #333333;
-$color-gray-1: #a8a8a8;
-$color-gray-2: #808080;
-$color-red: #f00;
+$color: (
+	primary: #fbb03b,
+	white: #fff,
+	black: #333333,
+	gray-1: #a8a8a8,
+	gray-2: #808080,
+	gray-3: #cecece,
+	gray-4: #f6f6f6,
+	gray-5: #c4c4c4,
+	red: #f00,
+);
 // Font
 $font-family-primary: "Poppins", sans-serif;
 // Break point
-$break-point-small: 480px;
-$break-point-medium: 768px;
-$break-point-large: 992px;
-$break-point-extra-large: 1200px;
+$break-point: (
+	small: 480px,
+	medium: 768px,
+	large: 992px,
+	extra-large: 1200px,
+);
