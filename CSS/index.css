@@ -362,21 +362,28 @@ span {
 	.mobile-screen {
 		display: block;
 	}
+	.btn {
+		padding: 0.25rem 0.8rem;
+	}
 	.header {
-		padding: 0 0;
 		position: fixed;
+		top: 0;
 		background-color: var(--color-white);
+	}
+	.header .container {
+		padding: 1.66666667rem 2rem;
 	}
 	.header .logo-img {
 		height: 2.66666667rem;
 	}
-	.menu-category {
+	.header div:nth-child(2) {
 		display: none;
 	}
 	.menu-functional .icon {
 		height: 1.666666667rem;
 	}
-	.hero {
+	.hero-heading {
+		width: 100%;
 	}
 	.pill {
 		display: none;
@@ -387,11 +394,18 @@ span {
 	.subcribe-form {
 		padding: 0 0.625rem;
 	}
+	.today-product-title {
+		text-align: left;
+	}
 	.subcribe-form input {
 		padding: 0.75rem 1rem;
 		width: 100%;
+		font-size: 1rem;
 	}
 	.subcribe-form button {
+		font-size: 1rem;
+		padding-top: 0.8rem;
+		padding-bottom: 0.8rem;
 		width: 40%;
 	}
 	.social {
