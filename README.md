@@ -17,9 +17,9 @@ Group: 01
 
 ## Training Process
 
--[x] HTML
--[] CSS
--[] SASS
--[] JavaScript
--[] TypeScript
--[] ReactJS
+- [x] HTML
+- [ ] CSS
+- [ ] SASS
+- [ ] JavaScript
+- [ ] TypeScript
+- [ ] ReactJS
