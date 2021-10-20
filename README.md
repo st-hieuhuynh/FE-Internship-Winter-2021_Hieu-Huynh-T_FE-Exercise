@@ -10,16 +10,16 @@ Group: 01
 - Quan Do H.
 - Ha Hoang T.
 
-## Group 01 Mate
+### Group 01 Mate
 
 - Huy Nguyen K.
 - Vy Duong T.
 
 ## Training Process
 
--[x] HTML
--[] CSS
--[] SASS
--[] JavaScript
--[] TypeScript
--[] ReactJS
+- [x] HTML
+- [ ] CSS
+- [ ] SASS
+- [ ] JavaScript
+- [ ] TypeScript
+- [ ] ReactJS
