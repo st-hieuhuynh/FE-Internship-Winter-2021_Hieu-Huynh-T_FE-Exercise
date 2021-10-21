@@ -25,7 +25,6 @@ html {
 	font-size: 16px;
 }
 body {
-	height: 100%;
 	font-family: var(--font-family-primary);
 	font-weight: normal;
 	line-height: 1.5;
@@ -50,8 +49,8 @@ p {
 	font-size: 0.875rem;
 }
 img {
-	height: 100%;
-	width: 100%;
+	max-height: 100%;
+	max-width: 100%;
 }
 a {
 	text-decoration: none;
@@ -74,7 +73,7 @@ span {
 .section-action {
 	position: absolute;
 	top: 0;
-	right: 0.75rem;
+	right: 2rem;
 }
 .background-img {
 	filter: brightness(50%);
@@ -289,9 +288,9 @@ span {
 .benefit-item {
 	width: 90%;
 }
-.benefit-item img {
-	height: 4rem;
-	width: 4rem;
+.benefit-item .icon {
+	height: 5.66666667rem;
+	width: auto;
 	border-radius: 5px;
 }
 .benefit-item-title {
@@ -316,6 +315,11 @@ span {
 .subcribe-title {
 	font-size: var(--size-l);
 	color: var(--color-white);
+}
+.subcribe-form {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 .subcribe-form input {
 	width: 60%;
@@ -356,6 +360,9 @@ span {
 	html {
 		font-size: 12px;
 	}
+	h3 {
+		font-size: 1.5rem;
+	}
 	.desktop-screen {
 		display: none;
 	}
@@ -364,6 +371,13 @@ span {
 	}
 	.btn {
 		padding: 0.25rem 0.8rem;
+		font-size: 0.8333333rem;
+	}
+	.section-action {
+		margin-top: 0.5833333rem;
+	}
+	.section-action .btn {
+		border: none;
 	}
 	.header {
 		position: fixed;
@@ -382,17 +396,46 @@ span {
 	.menu-functional .icon {
 		height: 1.666666667rem;
 	}
+	.hero {
+		margin-bottom: 2rem;
+	}
+	.hero-container {
+		padding: 0;
+	}
 	.hero-heading {
 		width: 100%;
 	}
 	.pill {
 		display: none;
 	}
-	.subcribe-title {
-		width: 60%;
+	.product .product-img {
+		margin-bottom: 0rem;
 	}
-	.subcribe-form {
-		padding: 0 0.625rem;
+	.product-price {
+		font-size: 0.833333rem;
+		margin-bottom: 0.333333rem;
+	}
+	.benefit li {
+		width: 100%;
+	}
+	.benefit-item {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 1.5rem;
+	}
+	.benefit-item .icon {
+		margin-bottom: 0;
+		margin-right: 1.5rem;
+	}
+	.banner-item-content {
+		width: 60%;
+		left: 1.5rem;
+		bottom: 1.5rem;
+	}
+	.banner-item-title {
+		font-size: 1.1666666667rem;
+		height: 3.5rem;
+		margin-bottom: 0.75rem;
 	}
 	.today-product-title {
 		text-align: left;
@@ -402,11 +445,28 @@ span {
 		width: 100%;
 		font-size: 1rem;
 	}
-	.subcribe-form button {
+	.subcribe {
+		padding: 2rem 0;
+	}
+	.subcribe-title {
+		font-size: 1.1666666667rem;
+		width: 60%;
+		margin-bottom: 2rem;
+	}
+	.subcribe-form .input {
+		margin-bottom: 1.33333333rem;
+	}
+	.subcribe-form .btn {
 		font-size: 1rem;
 		padding-top: 0.8rem;
 		padding-bottom: 0.8rem;
 		width: 40%;
+	}
+	.brand-story {
+		width: 100%;
+	}
+	.brand-story-detail {
+		font-size: 1.1666667rem;
 	}
 	.social {
 		display: none;
