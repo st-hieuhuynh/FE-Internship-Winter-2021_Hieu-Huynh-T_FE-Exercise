@@ -6,6 +6,7 @@
 	--color-black: #333333;
 	--color-gray-1: #a8a8a8;
 	--color-gray-2: #808080;
+	--color-gray-4: #f6f6f6;
 	--color-red: #f00;
 	--size-xxs: 0.25rem;
 	--size-xs: 0.5rem;
@@ -155,7 +156,6 @@ span {
 /* hero */
 .hero {
 	position: relative;
-	height: 100vh;
 	width: 100%;
 	overflow: hidden;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -165,13 +165,11 @@ span {
 	background-position: 0 center;
 }
 .hero-container {
-	position: absolute;
-	bottom: 0;
-	padding: 0 6rem;
+	padding: 13.875rem 0 0 6rem;
 }
 .hero-heading {
 	width: 45%;
-	margin-bottom: 12rem;
+	margin-bottom: 10.6875rem;
 	color: var(--color-white);
 }
 .hero-text {
@@ -181,17 +179,19 @@ span {
 }
 .hero-redirect {
 	font-size: 1.5rem;
+	font-weight: bold;
 	text-decoration: underline;
 }
 .hero-redirect::before {
 	content: "";
 	background: url(../assets/img/arrow-right.png);
 	background-repeat: no-repeat;
-	background-size: auto 1.25rem;
+	background-size: auto 1rem;
 	background-position: center center;
 	vertical-align: middle;
 	display: inline-block;
 	background-color: var(--color-primary);
+	/* padding: 11px 10px; */
 	height: 2.25rem;
 	width: 2.25rem;
 	margin-right: 1.25rem;
@@ -284,6 +284,7 @@ span {
 /* why choose us */
 .benefit {
 	padding: 3rem 0;
+	background-color: var(--color-gray-4);
 }
 .benefit-item {
 	width: 90%;
@@ -376,6 +377,9 @@ span {
 		padding: 0.25rem 0.8rem;
 		font-size: 0.8333333rem;
 	}
+	.badge {
+		padding: 0.16666667rem 0.416666667rem;
+	}
 	.section-action {
 		margin-top: 0.5833333rem;
 	}
@@ -405,10 +409,18 @@ span {
 		margin-bottom: 2rem;
 	}
 	.hero-container {
-		padding: 0;
+		padding: 22.58333333rem 0;
 	}
 	.hero-heading {
 		width: 100%;
+		margin-bottom: 0;
+	}
+	.hero-text {
+		font-size: 4rem;
+	}
+	.hero-redirect::before {
+		height: 2.6666667rem;
+		width: 2.6666667rem;
 	}
 	.pill {
 		display: none;
@@ -420,6 +432,10 @@ span {
 	.product-price {
 		font-size: 0.833333rem;
 		margin-bottom: 0.333333rem;
+	}
+	.product-promo {
+		top: 1rem;
+		left: 0.75rem;
 	}
 	/* why choose us */
 	.benefit li {
@@ -434,10 +450,11 @@ span {
 		margin-bottom: 0;
 		margin-right: 1.5rem;
 	}
+	/* banner */
 	.banner-item-content {
 		width: 60%;
-		left: 1.5rem;
-		bottom: 1.5rem;
+		left: 1.3333333rem;
+		bottom: 1.3333333rem;
 	}
 	.banner-item-title {
 		font-size: 1.1666666667rem;
