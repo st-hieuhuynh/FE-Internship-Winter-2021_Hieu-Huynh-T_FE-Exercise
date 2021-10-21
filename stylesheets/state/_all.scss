@@ -1,3 +1,15 @@
 @import "spacing";
 @import "typo";
 @import "image";
+
+.desktop-screen {
+	@include sm-screen {
+		display: none;
+	}
+}
+.mobile-screen {
+	display: none;
+	@include sm-screen {
+		display: block;
+	}
+}

@@ -69,7 +69,7 @@ span {
 }
 .icon {
 	height: 1.5rem;
-	width: auto;
+	width: 1.5rem;
 }
 .section-action {
 	position: absolute;
@@ -155,7 +155,7 @@ span {
 }
 /* hero */
 .hero {
-	position: relative;
+	/* position: relative; */
 	height: 100vh;
 	width: 100%;
 	overflow: hidden;

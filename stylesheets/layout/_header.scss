@@ -6,6 +6,9 @@
 	width: 100%;
 	padding-top: 3rem;
 	background-color: rgba($color: #000000, $alpha: 0.1);
+	@include sm-screen {
+		background-color: map-get($map: $color, $key: white);
+	}
 	.menu {
 		&-category {
 			font-weight: bold;

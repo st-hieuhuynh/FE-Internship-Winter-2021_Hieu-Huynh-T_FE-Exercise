@@ -1,0 +1,8 @@
+.section {
+	position: relative;
+	&-action {
+		position: absolute;
+		top: 0;
+		right: 0.75rem;
+	}
+}

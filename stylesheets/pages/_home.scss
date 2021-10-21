@@ -1,5 +1,5 @@
 .hero {
-	// position: relative;
+	position: relative;
 	height: 100vh;
 	width: 100%;
 	overflow: hidden;
@@ -113,5 +113,13 @@
 	&-title {
 		font-size: 1.5rem;
 		color: map-get($map: $color, $key: white);
+	}
+	.subcribe-form {
+		input {
+			width: 60%;
+		}
+		button {
+			width: 30%;
+		}
 	}
 }

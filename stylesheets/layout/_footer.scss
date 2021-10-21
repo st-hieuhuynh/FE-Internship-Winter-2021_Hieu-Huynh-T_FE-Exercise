@@ -3,7 +3,19 @@
 	background-color: map-get($map: $color, $key: primary);
 	.social {
 		img {
-			@include icon-size(1.25rem);
+			@include icon-size(1.125rem);
+		}
+	}
+	.brand-story {
+		margin-top: -10px;
+		&-detail {
+			font-size: 0.8725rem;
+		}
+	}
+	.nav-link {
+		height: 100%;
+		&-title {
+			font-weight: bold;
 		}
 	}
 }

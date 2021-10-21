@@ -1,6 +1,9 @@
 .btn {
 	display: inline-block;
 	padding: 0.875rem 1.5rem;
+	@include sm-screen {
+		padding: 0.25rem 0.8rem;
+	}
 	font-family: inherit;
 	font-weight: bold;
 	font-size: 0.8125rem;
