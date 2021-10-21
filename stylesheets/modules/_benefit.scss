@@ -1,6 +1,6 @@
 .benefit {
 	padding: 3rem 0;
-	background-color: #f7f7f7;
+	background-color: map-get($map: $color, $key: gray-4);
 	&-item {
 		width: 85%;
 		img {

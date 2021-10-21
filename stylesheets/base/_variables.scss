@@ -21,3 +21,14 @@ $break-point: (
 	large: 992px,
 	extra-large: 1200px,
 );
+// Size space
+$list-size: xxs, xs, s, m, l, xl, xxl;
+$size: (
+	xxs: 0.25rem,
+	xs: 0.5rem,
+	s: 0.75rem,
+	m: 1rem,
+	l: 1.5rem,
+	xl: 3rem,
+	xxl: 6rem,
+);

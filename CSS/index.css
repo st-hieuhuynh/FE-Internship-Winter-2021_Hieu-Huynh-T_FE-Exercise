@@ -155,7 +155,7 @@ span {
 }
 /* hero */
 .hero {
-	/* position: relative; */
+	position: relative;
 	height: 100vh;
 	width: 100%;
 	overflow: hidden;
@@ -285,6 +285,7 @@ span {
 /* why choose us */
 .benefit {
 	padding: 3rem 0;
+	background-color: #f6f6f6;
 }
 .benefit-item {
 	width: 90%;

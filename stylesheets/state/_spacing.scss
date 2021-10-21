@@ -1,0 +1,43 @@
+@for $i from 1 to length($list-size) + 1 {
+	$sizeIn: nth($list-size, $i);
+	$sizeValue: map-get(
+		$map: $size,
+		$key: $sizeIn,
+	);
+	.mb-#{$sizeIn} {
+		margin-bottom: $sizeValue;
+	}
+	.mt-#{$sizeIn} {
+		margin-top: $sizeValue;
+	}
+	.ml-#{$sizeIn} {
+		margin-left: $sizeValue;
+	}
+	.mr-#{$sizeIn} {
+		margin-right: $sizeValue;
+	}
+	.mx-#{$sizeIn} {
+		margin-bottom: $sizeValue;
+	}
+	.my-#{$sizeIn} {
+		margin-bottom: $sizeValue;
+	}
+	.pb-#{$sizeIn} {
+		padding-bottom: $sizeValue;
+	}
+	.pt-#{$sizeIn} {
+		padding-top: $sizeValue;
+	}
+	.pl-#{$sizeIn} {
+		padding-left: $sizeValue;
+	}
+	.pr-#{$sizeIn} {
+		padding-right: $sizeValue;
+	}
+	.px-#{$sizeIn} {
+		padding-bottom: $sizeValue;
+	}
+	.py-#{$sizeIn} {
+		padding-bottom: $sizeValue;
+	}
+}
