@@ -320,6 +320,8 @@ span {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 }
 .subcribe-form input {
 	width: 60%;
@@ -363,6 +365,7 @@ span {
 	h3 {
 		font-size: 1.5rem;
 	}
+	/* common */
 	.desktop-screen {
 		display: none;
 	}
@@ -379,6 +382,7 @@ span {
 	.section-action .btn {
 		border: none;
 	}
+	/* header mobile */
 	.header {
 		position: fixed;
 		top: 0;
@@ -396,6 +400,7 @@ span {
 	.menu-functional .icon {
 		height: 1.666666667rem;
 	}
+	/* hero */
 	.hero {
 		margin-bottom: 2rem;
 	}
@@ -408,6 +413,7 @@ span {
 	.pill {
 		display: none;
 	}
+	/* product */
 	.product .product-img {
 		margin-bottom: 0rem;
 	}
@@ -415,6 +421,7 @@ span {
 		font-size: 0.833333rem;
 		margin-bottom: 0.333333rem;
 	}
+	/* why choose us */
 	.benefit li {
 		width: 100%;
 	}
@@ -440,11 +447,7 @@ span {
 	.today-product-title {
 		text-align: left;
 	}
-	.subcribe-form input {
-		padding: 0.75rem 1rem;
-		width: 100%;
-		font-size: 1rem;
-	}
+	/* newsletter */
 	.subcribe {
 		padding: 2rem 0;
 	}
@@ -454,6 +457,7 @@ span {
 		margin-bottom: 2rem;
 	}
 	.subcribe-form .input {
+		width: 100%;
 		margin-bottom: 1.33333333rem;
 	}
 	.subcribe-form .btn {
@@ -462,6 +466,7 @@ span {
 		padding-bottom: 0.8rem;
 		width: 40%;
 	}
+	/* footer */
 	.brand-story {
 		width: 100%;
 	}
@@ -471,8 +476,9 @@ span {
 	.social {
 		display: none;
 	}
-	.nav-link .list-group {
+	.nav-link > .list-group {
 		flex-direction: column;
+		gap: 2rem;
 	}
 }
 @media screen and (max-width: 990px) {
