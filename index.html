@@ -19,81 +19,75 @@
 	<body>
 		<header class="header">
 			<div class="container">
-				<div class="row f-center-x justify-between">
-					<div class="col-2">
-						<div class="menu-logo">
-							<h1>
-								<a href="index.html">
-									<img
-										class="logo-img desktop-screen"
-										src="./assets/img/Logo.png"
-										alt="E-shop"
+				<div class="flex f-center-x justify-between">
+					<div class="menu-logo">
+						<h1>
+							<a href="index.html">
+								<img
+									class="logo-img desktop-screen"
+									src="./assets/img/Logo.png"
+									alt="E-shop"
+								/>
+								<img
+									class="logo-img mobile-screen"
+									src="./assets/img/Logo-dark.png"
+									alt="E-shop"
+								/>
+							</a>
+						</h1>
+					</div>
+					<nav class="menu-category">
+						<ul class="list-group justify-between">
+							<li class="list-group-item">
+								<a href="#" class="text-primary">Men</a>
+							</li>
+							<li class="list-group-item">
+								<a href="#" class="text-primary">Women</a>
+							</li>
+							<li class="list-group-item">
+								<a href="#" class="text-primary">Kids</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="menu-functional">
+						<ul class="list-group">
+							<li class="list-group-item">
+								<a href="#"
+									><img
+										class="icon desktop-screen"
+										src="./assets/img/search-icon.png"
+										alt="search"
 									/>
 									<img
-										class="logo-img mobile-screen"
-										src="./assets/img/Logo-dark.png"
-										alt="E-shop"
+										class="icon mobile-screen"
+										src="./assets/img/cart-icon-dark.png"
+										alt="cart"
 									/>
 								</a>
-							</h1>
-						</div>
-					</div>
-					<div class="col-4">
-						<nav class="menu-category">
-							<ul class="list-group justify-between">
-								<li class="list-group-item">
-									<a href="#" class="text-primary">Men</a>
-								</li>
-								<li class="list-group-item">
-									<a href="#" class="text-primary">Women</a>
-								</li>
-								<li class="list-group-item">
-									<a href="#" class="text-primary">Kids</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-					<div class="col-2">
-						<div class="menu-functional">
-							<ul class="list-group justify-between">
-								<li class="list-group-item">
-									<a href="#"
-										><img
-											class="icon desktop-screen"
-											src="./assets/img/search-icon.png"
-											alt="search"
-										/>
-										<img
-											class="icon mobile-screen"
-											src="./assets/img/cart-icon-dark.png"
-											alt="cart"
-										/>
-									</a>
-								</li>
-								<li class="list-group-item">
-									<a href="#"
-										><img
-											class="icon desktop-screen"
-											src="./assets/img/cart-icon.png"
-											alt="cart" /><img
-											class="icon mobile-screen"
-											src="./assets/img/user-icon-dark.png"
-											alt="search"
-									/></a>
-								</li>
-								<li class="list-group-item">
-									<a href="#"
-										><img
-											class="icon desktop-screen"
-											src="./assets/img/user-icon.png"
-											alt="user desktop-screen" /><img
-											class="icon mobile-screen"
-											src="./assets/img/menu-ham-dark.png"
-											alt="menu"
-									/></a>
-								</li>
-							</ul>
-						</div>
+							</li>
+							<li class="list-group-item">
+								<a href="#"
+									><img
+										class="icon desktop-screen"
+										src="./assets/img/cart-icon.png"
+										alt="cart" /><img
+										class="icon mobile-screen"
+										src="./assets/img/user-icon-dark.png"
+										alt="search"
+								/></a>
+							</li>
+							<li class="list-group-item">
+								<a href="#"
+									><img
+										class="icon desktop-screen"
+										src="./assets/img/user-icon.png"
+										alt="user desktop-screen" /><img
+										class="icon mobile-screen"
+										src="./assets/img/menu-ham-dark.png"
+										alt="menu"
+								/></a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -215,7 +209,7 @@
 						<li class="col-3">
 							<div class="product">
 								<img
-									src="./assets//img/home-product-1.png"
+									src="./assets/img/home-product-1.png"
 									alt="T-Shirt Summer Vibes"
 									class="product-img"
 								/>
@@ -285,11 +279,13 @@
 									alt="Free Shipping"
 									class="icon mb-xl"
 								/>
-								<h4 class="benefit-item-title">Free Shipping</h4>
-								<p class="benefit-item-desc">
-									All purchases over $199 are eligible forfree shipping via USPS
-									First Class Mail.
-								</p>
+								<div class="benefit-item-content">
+									<h4 class="benefit-item-title">Free Shipping</h4>
+									<p class="benefit-item-desc">
+										All purchases over $199 are eligible forfree shipping via
+										USPS First Class Mail.
+									</p>
+								</div>
 							</div>
 						</li>
 						<li class="col-3">
@@ -299,11 +295,13 @@
 									alt="Easy Payments"
 									class="icon mb-xl"
 								/>
-								<h4 class="benefit-item-title">Easy Payments</h4>
-								<p class="benefit-item-desc">
-									All payments are processed instantlyover a secure payment
-									protocol.
-								</p>
+								<div class="benefit-item-content">
+									<h4 class="benefit-item-title">Easy Payments</h4>
+									<p class="benefit-item-desc">
+										All payments are processed instantlyover a secure payment
+										protocol.
+									</p>
+								</div>
 							</div>
 						</li>
 						<li class="col-3">
@@ -313,11 +311,13 @@
 									alt="Money-Back Guarantee"
 									class="icon mb-xl"
 								/>
-								<h4 class="benefit-item-title">Money-Back Guarantee</h4>
-								<p class="benefit-item-desc">
-									If an item arrived damaged or you'vechanged your mind, you can
-									send itback for a full refund.
-								</p>
+								<div class="benefit-item-content">
+									<h4 class="benefit-item-title">Money-Back Guarantee</h4>
+									<p class="benefit-item-desc">
+										If an item arrived damaged or you'vechanged your mind, you
+										can send itback for a full refund.
+									</p>
+								</div>
 							</div>
 						</li>
 						<li class="col-3">
@@ -327,11 +327,13 @@
 									alt="Finest Quality"
 									class="icon mb-xl"
 								/>
-								<h4 class="benefit-item-title">Finest Quality</h4>
-								<p class="benefit-item-desc">
-									Designed to last, each of our products hasbeen crafted with
-									the finest materials.
-								</p>
+								<div class="benefit-item-content">
+									<h4 class="benefit-item-title">Finest Quality</h4>
+									<p class="benefit-item-desc">
+										Designed to last, each of our products hasbeen crafted with
+										the finest materials.
+									</p>
+								</div>
 							</div>
 						</li>
 					</ul>
@@ -410,7 +412,7 @@
 							</p>
 						</div>
 						<div class="col-6">
-							<form class="subcribe-form row justify-between">
+							<form class="subcribe-form">
 								<input
 									class="input"
 									type="email"
@@ -431,7 +433,7 @@
 				<div class="row justify-between py-xl">
 					<div class="col-4">
 						<div class="brand-story mb-xl">
-							<a>
+							<a href="#">
 								<img
 									src="./assets/img/Logo.png"
 									alt="E-shop"
