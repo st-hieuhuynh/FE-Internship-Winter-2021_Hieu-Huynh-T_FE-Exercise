@@ -142,8 +142,8 @@ span {
 	z-index: 100;
 }
 .logo-img {
-	height: 2.175rem;
-	width: auto;
+	height: auto;
+	width: 8.6875rem;
 }
 .menu-category {
 	font-weight: bold;
@@ -366,6 +366,13 @@ span {
 	h3 {
 		font-size: 1.5rem;
 	}
+	ul {
+		margin: 0 -0.333333rem;
+		margin-top: -0.333333rem;
+	}
+	ul > li {
+		margin-top: 0.333333rem;
+	}
 	/* common */
 	.desktop-screen {
 		display: none;
@@ -396,7 +403,8 @@ span {
 		padding: 1.66666667rem 2rem;
 	}
 	.header .logo-img {
-		height: 2.66666667rem;
+		height: auto;
+		width: 10.666667rem;
 	}
 	.header div:nth-child(2) {
 		display: none;
@@ -485,6 +493,10 @@ span {
 	}
 	/* footer */
 	.brand-story {
+		width: 11.44rem;
+		height: auto;
+	}
+	.brand-story .logo-img {
 		width: 100%;
 	}
 	.brand-story-detail {
