@@ -1,8 +1,8 @@
 .container {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0 2rem;
-	max-width: 1150px;
+	padding: 0 10px;
+	max-width: 1170px;
 }
 .row {
 	display: flex;
@@ -121,6 +121,9 @@
 	gap: 3rem;
 }
 @media screen and (max-width: 576px) {
+	.container {
+		padding: 0 2rem;
+	}
 	.row > * {
 		box-sizing: border-box;
 		max-width: 100%;
