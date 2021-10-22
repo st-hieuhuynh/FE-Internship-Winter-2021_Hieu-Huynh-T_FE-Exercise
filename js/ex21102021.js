@@ -50,11 +50,11 @@ var planList = [
 ];
 var tableBasic = document.createElement("table");
 tableBasic.style.textAlign = "center";
-tableBasic.style.border = "1px solid gray";
+tableBasic.style.border = "1px solid #EAEBEB";
 tableBasic.style.width = "20rem";
 tableBasic.createTHead().insertRow(0).insertCell(0).innerHTML =
 	"<span>" + planList[0].title + "</span>";
-tableBasic.tHead.rows[0].cells[0].style.borderBottom = "1px solid gray";
+tableBasic.tHead.rows[0].cells[0].style.borderBottom = "1px solid #EAEBEB";
 tableBasic.createTBody().insertRow(0).insertCell(0).innerHTML =
 	"<span>" +
 	planList[0].price +
@@ -77,11 +77,11 @@ tableBasic.createTBody().insertRow(0).insertCell(0).innerHTML =
 	"</button>";
 var tablePro = document.createElement("table");
 tablePro.style.textAlign = "center";
-tablePro.style.border = "1px solid gray";
+tablePro.style.border = "1px solid #EAEBEB";
 tablePro.style.width = "20rem";
 tablePro.createTHead().insertRow(0).insertCell(0).innerHTML =
 	"<span>" + planList[1].title + "</span>";
-tablePro.tHead.rows[0].cells[0].style.borderBottom = "1px solid gray";
+tablePro.tHead.rows[0].cells[0].style.borderBottom = "1px solid #EAEBEB";
 tablePro.createTBody().insertRow(0).insertCell(0).innerHTML =
 	"<span>" +
 	planList[1].price +
