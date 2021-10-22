@@ -67,10 +67,6 @@ span {
 .text-center {
 	text-align: center;
 }
-.icon {
-	height: 1.5rem;
-	width: auto;
-}
 .section-action {
 	position: absolute;
 	top: 0;
@@ -83,7 +79,6 @@ span {
 .input {
 	box-sizing: border-box;
 	padding: 0.8625rem 1.5rem;
-	height: 3rem;
 	font-size: var(--size-s);
 	border-radius: 3rem;
 	border: none;
@@ -157,7 +152,6 @@ span {
 	z-index: 100;
 }
 .logo-img {
-	height: auto;
 	width: 8.6875rem;
 }
 .menu-category .list-group {
@@ -166,6 +160,9 @@ span {
 }
 .menu-functional .list-group {
 	gap: 1.5rem;
+}
+.menu-functional .icon {
+	width: 1.5rem;
 }
 /* hero */
 .hero {
@@ -206,38 +203,37 @@ span {
 	vertical-align: middle;
 	display: inline-block;
 	background-color: var(--color-primary);
-	/* padding: 11px 10px; */
 	height: 2.25rem;
 	width: 2.25rem;
 	margin-right: 1.25rem;
 	border-radius: 50%;
 }
 .pill {
-	height: 4rem;
+	position: relative;
 	width: 75%;
 	bottom: 0;
 	padding-top: 2.25rem;
 	padding-bottom: 1.5rem;
 	padding-right: 6rem;
-	background-color: var(--color-white);
-	border-top-right-radius: 3rem;
+	z-index: 1;
 }
 .pill::before {
 	content: "";
 	position: absolute;
+	top: 0;
 	bottom: 0;
-	height: 7.75rem;
-	width: 240px;
-	overflow-x: auto;
+	right: 0;
+	left: -100vw;
 	background-color: var(--color-white);
-	margin-left: -240px;
+	border-top-right-radius: 3rem;
+	z-index: -10;
 }
 .pill-item {
 	display: flex;
 	flex-direction: row;
+	align-items: flex-start;
 }
 .pill-item img {
-	height: 2.25rem;
 	width: 2.25rem;
 	background-color: #fff3df;
 	border-radius: 0.5rem;
@@ -305,8 +301,7 @@ span {
 	width: 90%;
 }
 .benefit-item .icon {
-	height: 5.66666667rem;
-	width: auto;
+	width: 4.25rem;
 	border-radius: 5px;
 }
 .benefit-item-title {
@@ -359,10 +354,7 @@ span {
 	font-size: 0.8725rem;
 }
 .social img {
-	height: var(--size-m);
-}
-.nav-link {
-	height: 100%;
+	width: var(--size-m);
 }
 .nav-link-title {
 	font-weight: bold;
@@ -411,14 +403,13 @@ span {
 		padding: 1.66666667rem 2rem;
 	}
 	.header .logo-img {
-		height: auto;
 		width: 10.666667rem;
 	}
 	.menu-category {
 		display: none;
 	}
 	.menu-functional .icon {
-		height: 1.666666667rem;
+		width: 1.666666667rem;
 	}
 	/* hero */
 	.hero {
@@ -500,12 +491,19 @@ span {
 		width: 40%;
 	}
 	/* footer */
+	.footer .row {
+		padding-top: 2rem;
+		padding-bottom: 4rem;
+	}
+	.footer .row > * {
+		width: 100%;
+	}
 	.brand-story {
-		width: 11.44rem;
-		height: auto;
+		margin-top: 0;
+		width: 100%;
 	}
 	.brand-story .logo-img {
-		width: 100%;
+		width: 11.44rem;
 	}
 	.brand-story-detail {
 		font-size: 1.1666667rem;
