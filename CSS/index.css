@@ -334,10 +334,10 @@ span {
 	justify-content: space-between;
 	align-items: center;
 }
-.subcribe-form input {
+.subcribe-form .input {
 	width: 60%;
 }
-.subcribe-form button {
+.subcribe-form .btn {
 	width: 30%;
 }
 

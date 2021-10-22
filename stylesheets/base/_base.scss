@@ -7,10 +7,10 @@ html {
 	@include sm-screen {
 		font-size: $font-size-sm;
 	}
-	color: map-get($map: $color, $key: black);
-	box-sizing: border-box;
 }
 body {
+	box-sizing: border-box;
+	color: map-get($map: $color, $key: black);
 	font-family: $font-family-primary;
 	font-weight: normal;
 	line-height: 1.5;
@@ -24,6 +24,9 @@ h2 {
 }
 h3 {
 	font-size: 2rem;
+	@include sm-screen {
+		font-size: 1.5rem;
+	}
 	font-weight: 300;
 }
 h4 {

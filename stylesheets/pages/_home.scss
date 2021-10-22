@@ -1,72 +1,90 @@
 .hero {
 	position: relative;
-	height: 100vh;
 	width: 100%;
 	overflow: hidden;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url(../assets/img/home-banner.png);
+		url(../assets/img/home-banner-desktop.png);
+	@include sm-screen {
+		margin-bottom: 2rem;
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+			url(../assets/img/home-banner.png);
+	}
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 center;
 
 	&-container {
-		position: absolute;
-		bottom: 0;
-		padding: 0 6rem;
+		padding: 13.875rem 0 0 6rem;
+		@include sm-screen {
+			padding: 22.58333333rem 0;
+		}
 	}
 	&-heading {
-		width: 45%;
-		margin-bottom: 12rem;
+		margin-bottom: 10.6875rem;
+		@include sm-screen {
+			margin-bottom: 0;
+		}
 		color: map-get($map: $color, $key: white);
 	}
 	&-text {
 		font-size: 4.5rem;
+		@include sm-screen {
+			font-size: 4rem;
+		}
 		line-height: 4.5625rem;
 		font-weight: bold;
 	}
 	&-redirect {
 		font-size: 1.5rem;
+		font-weight: bold;
 		text-decoration: underline;
 		&::before {
 			content: "";
 			background: url(../assets/img/arrow-right.png);
 			background-repeat: no-repeat;
-			background-size: auto 1.25rem;
+			background-size: auto 1rem;
 			background-position: center center;
 			vertical-align: middle;
 			display: inline-block;
 			background-color: map-get($map: $color, $key: primary);
 			height: 2.25rem;
 			width: 2.25rem;
+			@include sm-screen {
+				height: 2.6666667rem;
+				width: 2.6666667rem;
+			}
 			margin-right: 1.25rem;
 			border-radius: 50%;
 		}
 	}
 }
 .pill {
-	height: 4rem;
+	position: relative;
 	width: 75%;
 	bottom: 0;
 	padding-top: 2.25rem;
 	padding-bottom: 1.5rem;
 	padding-right: 6rem;
-	background-color: map-get($map: $color, $key: white);
-	border-top-right-radius: 3rem;
+	z-index: 1;
+	@include sm-screen {
+		display: none;
+	}
 	&::before {
 		content: "";
 		position: absolute;
+		top: 0;
 		bottom: 0;
-		height: 7.75rem;
-		width: 240px;
-		overflow-x: auto;
+		right: 0;
+		left: -100vw;
 		background-color: map-get($map: $color, $key: white);
-		margin-left: -240px;
+		border-top-right-radius: 3rem;
+		z-index: -10;
 	}
 	&-item {
 		display: flex;
 		flex-direction: row;
+		align-items: flex-start;
 		img {
-			height: 2.25rem;
 			width: 2.25rem;
 			background-color: #fff3df;
 			border-radius: 0.5rem;
@@ -87,6 +105,12 @@
 .selected-product {
 	.container {
 		position: relative;
+		padding-bottom: 1rem;
+	}
+}
+.today-product {
+	&-title {
+		text-align: left;
 	}
 }
 .banner {
@@ -97,12 +121,21 @@
 			bottom: 53px;
 			left: 40px;
 			width: 70%;
+			@include sm-screen {
+				left: 1.3333333rem;
+				bottom: 1.3333333rem;
+			}
 		}
 		&-title {
 			font-size: 1.5rem;
-			height: 4.5rem;
-			color: map-get($map: $color, $key: white);
+			min-height: 4.5rem;
 			margin-bottom: 1.175rem;
+			@include sm-screen {
+				font-size: 1.1666666667rem;
+				min-height: 3.5rem;
+				margin-bottom: 0.75rem;
+			}
+			color: map-get($map: $color, $key: white);
 		}
 	}
 }
@@ -114,18 +147,41 @@
 		),
 		url(../assets/img/home-newsletter.png);
 	padding: 5.3125rem 0;
+	@include sm-screen {
+		padding: 2rem 0;
+	}
 	background-size: cover;
 	background-position: center;
 	&-title {
 		font-size: 1.5rem;
+		@include sm-screen {
+			font-size: 1.1666666667rem;
+			width: 60%;
+			margin-bottom: 2rem;
+		}
 		color: map-get($map: $color, $key: white);
 	}
 	.subcribe-form {
-		input {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		.input {
 			width: 60%;
+			@include sm-screen {
+				width: 100%;
+				margin-bottom: 1.33333333rem;
+			}
 		}
-		button {
+		.btn {
 			width: 30%;
+			@include sm-screen {
+				font-size: 1rem;
+				padding-top: 0.8rem;
+				padding-bottom: 0.8rem;
+				width: 40%;
+			}
 		}
 	}
 }

@@ -1,8 +1,13 @@
 .section {
-	position: relative;
 	&-action {
 		position: absolute;
 		top: 0;
 		right: 0.75rem;
+		@include sm-screen {
+			margin-top: 0.5833333rem;
+			.btn {
+				border: none;
+			}
+		}
 	}
 }
