@@ -1,6 +1,7 @@
 .footer {
 	color: map-get($map: $color, $key: white);
 	background-color: map-get($map: $color, $key: primary);
+	margin-bottom: 0;
 	.social {
 		img {
 			@include icon-size(1rem);
@@ -30,8 +31,11 @@
 			font-weight: bold;
 		}
 		@include sm-screen {
-			flex-direction: column;
 			gap: 2rem;
+			> .list-group {
+				flex-direction: column;
+				gap: 2rem;
+			}
 		}
 	}
 	@include sm-screen {

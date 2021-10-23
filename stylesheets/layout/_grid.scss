@@ -5,33 +5,7 @@ $num-col: 12;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 0.625rem;
-	.row {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		margin: 0 -0.625rem;
-		> * {
-			box-sizing: border-box;
-			max-width: 100%;
-			padding: 0 0.625rem;
-		}
-		.col {
-			flex: 1;
-		}
-		@for $i from 1 to $num-col {
-			.col-#{$i} {
-				flex: 0 0 auto;
-				width: math.div($i, $num-col) * 100%;
-				@include sm-screen {
-					@if $i <= math.div($num-col, 2) {
-						width: math.div($i, math.div($num-col, 2)) * 100%;
-					} @else {
-						width: 100%;
-					}
-				}
-			}
-		}
-	}
+
 	@include sm-screen {
 		padding: 0 2rem;
 		max-width: map-get($map: $break-point, $key: small);
@@ -44,5 +18,32 @@ $num-col: 12;
 	}
 	@include xl-screen {
 		max-width: map-get($map: $break-point, $key: extra-large);
+	}
+}
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0 -0.625rem;
+	> * {
+		box-sizing: border-box;
+		max-width: 100%;
+		padding: 0 0.625rem;
+	}
+	.col {
+		flex: 1;
+	}
+	@for $i from 1 to $num-col {
+		.col-#{$i} {
+			flex: 0 0 auto;
+			width: math.div($i, $num-col) * 100%;
+			@include sm-screen {
+				@if $i <= math.div($num-col, 2) {
+					width: math.div($i, math.div($num-col, 2)) * 100%;
+				} @else {
+					width: 100%;
+				}
+			}
+		}
 	}
 }

@@ -17,9 +17,11 @@
 		margin-right: $sizeValue;
 	}
 	.mx-#{$sizeIn} {
-		margin-bottom: $sizeValue;
+		margin-left: $sizeValue;
+		margin-right: $sizeValue;
 	}
 	.my-#{$sizeIn} {
+		margin-top: $sizeValue;
 		margin-bottom: $sizeValue;
 	}
 	.pb-#{$sizeIn} {
@@ -35,9 +37,14 @@
 		padding-right: $sizeValue;
 	}
 	.px-#{$sizeIn} {
-		padding-bottom: $sizeValue;
+		padding-left: $sizeValue;
+		padding-right: $sizeValue;
 	}
 	.py-#{$sizeIn} {
 		padding-bottom: $sizeValue;
+		padding-top: $sizeValue;
+	}
+	.gap-#{$sizeIn} {
+		gap: $sizeValue;
 	}
 }

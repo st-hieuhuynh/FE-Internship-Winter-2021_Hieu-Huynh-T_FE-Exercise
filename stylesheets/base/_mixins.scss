@@ -1,6 +1,6 @@
 @use "sass:math";
 @mixin icon-size($size) {
-	height: $size;
+	height: auto;
 	width: $size;
 }
 //Small Screen

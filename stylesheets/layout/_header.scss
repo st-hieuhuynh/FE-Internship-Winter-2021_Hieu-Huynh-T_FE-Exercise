@@ -25,9 +25,6 @@
 			}
 		}
 		&-functional {
-			margin-right: 0;
-			margin-left: auto;
-			width: 120px;
 			.icon {
 				@include icon-size(1.5rem);
 				@include sm-screen {
