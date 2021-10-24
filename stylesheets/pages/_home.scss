@@ -1,6 +1,5 @@
 .hero {
 	position: relative;
-	width: 100%;
 	overflow: hidden;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 		url(../assets/img/home-banner-desktop.png);
@@ -108,6 +107,17 @@
 	.container {
 		position: relative;
 		padding-bottom: 1rem;
+	}
+	.btn {
+		position: absolute;
+		top: 0;
+		right: 10px;
+		@include sm-screen {
+			margin-top: 0.5833333rem;
+			right: 2rem;
+			padding: 0 0.25rem;
+			border: none;
+		}
 	}
 }
 .today-product {
