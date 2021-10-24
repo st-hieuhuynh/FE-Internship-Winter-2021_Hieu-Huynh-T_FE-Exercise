@@ -50,7 +50,6 @@ p {
 	font-size: 0.875rem;
 }
 img {
-	max-height: 100%;
 	max-width: 100%;
 }
 a {
@@ -315,7 +314,7 @@ span {
 .subcribe {
 	background: linear-gradient(
 			90deg,
-			rgba(0, 0, 0, 0.5) 10%,
+			rgba(0, 0, 0, 0.5) 30%,
 			rgba(0, 0, 0, 0) 90%
 		),
 		url(../assets/img/home-newsletter.png);
@@ -364,7 +363,7 @@ span {
 	font-size: var(--size-s);
 	text-align: center;
 }
-/* Responsive */
+/* Responsive mobile */
 @media screen and (max-width: 576px) {
 	html {
 		font-size: 12px;
@@ -420,7 +419,6 @@ span {
 		padding: 22.58333333rem 0;
 	}
 	.hero-heading {
-		width: 100%;
 		margin-bottom: 0;
 	}
 	.hero-text {
@@ -478,7 +476,7 @@ span {
 	}
 	.subcribe-title {
 		font-size: 1.1666666667rem;
-		width: 60%;
+		width: 50%;
 		margin-bottom: 2rem;
 	}
 	.subcribe-form .input {
@@ -517,7 +515,9 @@ span {
 		gap: 2rem;
 	}
 }
+/* Mobile landscape*/
 @media screen and (min-width: 577px) and (max-width: 770px) {
+	/* banner */
 	.banner .btn {
 		font-size: 0.8rem;
 		padding: 0.45rem 0.1rem;
@@ -533,7 +533,9 @@ span {
 		right: 0.5rem;
 	}
 }
+/* Tablet  */
 @media screen and (min-width: 771px) and (max-width: 990px) {
+	/* banner */
 	.banner .btn {
 		padding: 0.45rem 0.8rem;
 	}
