@@ -3,34 +3,20 @@
 	overflow: hidden;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 		url(../assets/img/home-banner-desktop.png);
-	@include sm-screen {
-		margin-bottom: 2rem;
-		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-			url(../assets/img/home-banner.png);
-	}
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 center;
 	&-container {
 		padding: 13.875rem 0 0 6rem;
-		@include sm-screen {
-			padding: 22.58333333rem 0;
-		}
 	}
 	&-heading {
 		margin-bottom: 10.6875rem;
-		@include sm-screen {
-			margin-bottom: 0;
-		}
 		color: map-get($map: $color, $key: white);
 	}
 	&-text {
 		font-size: 4.5rem;
 		span {
 			display: block;
-		}
-		@include sm-screen {
-			font-size: 4rem;
 		}
 		line-height: 4.5625rem;
 		font-weight: bold;
@@ -50,10 +36,6 @@
 			background-color: map-get($map: $color, $key: primary);
 			height: 2.25rem;
 			width: 2.25rem;
-			@include sm-screen {
-				height: 2.6666667rem;
-				width: 2.6666667rem;
-			}
 			margin-right: 1.25rem;
 			border-radius: 50%;
 		}
@@ -67,9 +49,6 @@
 	padding-bottom: 1.5rem;
 	padding-right: 6rem;
 	z-index: 1;
-	@include sm-screen {
-		display: none;
-	}
 	&::before {
 		content: "";
 		position: absolute;
@@ -112,12 +91,6 @@
 		position: absolute;
 		top: 0;
 		right: 10px;
-		@include sm-screen {
-			margin-top: 0.5833333rem;
-			right: 2rem;
-			padding: 0 0.25rem;
-			border: none;
-		}
 	}
 }
 .today-product {
@@ -133,58 +106,16 @@
 			bottom: 53px;
 			left: 40px;
 			right: 40px;
-			@include lg-screen {
-				bottom: 2rem;
-				left: 1.5rem;
-				right: 1.5rem;
-			}
-			@include md-screen {
-				bottom: 1.5rem;
-				left: 0.5rem;
-				right: 0.25rem;
-			}
-			@include sm-screen {
-				left: 1.3333333rem;
-				bottom: 1.3333333rem;
-				right: 1.3333333rem;
-			}
 		}
 		&-title {
 			font-size: 1.5rem;
 			min-height: 4.5rem;
 			margin-bottom: 1.175rem;
-			@include lg-screen {
-				font-size: 1.3rem;
-				min-height: 3.5rem;
-				margin-bottom: 0.75rem;
-			}
-			@include md-screen {
-				font-size: 1rem;
-				min-height: 3.5rem;
-				margin-bottom: 0.75rem;
-			}
-			@include sm-screen {
-				font-size: 1.1666666667rem;
-				min-height: 3.5rem;
-				margin-bottom: 0.75rem;
-			}
 			color: map-get($map: $color, $key: white);
 		}
 	}
-	.btn {
-		@include lg-screen {
-			padding: 0.45rem 0.8rem;
-		}
-		@include md-screen {
-			font-size: 0.8rem;
-			padding: 0.45rem 0.45rem;
-		}
-		@include sm-screen {
-			padding: 0.25rem 0.8rem;
-			font-size: 0.8333333rem;
-		}
-	}
 }
+
 .subcribe {
 	background: linear-gradient(
 			90deg,
@@ -193,18 +124,10 @@
 		),
 		url(../assets/img/home-newsletter.png);
 	padding: 5.3125rem 0;
-	@include sm-screen {
-		padding: 2rem 0;
-	}
 	background-size: cover;
 	background-position: center;
 	&-title {
 		font-size: 1.5rem;
-		@include sm-screen {
-			font-size: 1.1666666667rem;
-			width: 60%;
-			margin-bottom: 2rem;
-		}
 		color: map-get($map: $color, $key: white);
 	}
 	.subcribe-form {
@@ -215,19 +138,119 @@
 		align-items: center;
 		.input {
 			width: 60%;
-			@include sm-screen {
-				width: 100%;
-				margin-bottom: 1.33333333rem;
-			}
 		}
 		.btn {
 			width: 30%;
-			@include sm-screen {
+		}
+	}
+}
+@include sm-screen {
+	.hero {
+		margin-bottom: 2rem;
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+			url(../assets/img/home-banner.png);
+		&-container {
+			padding: 22.58333333rem 0;
+		}
+		&-heading {
+			margin-bottom: 0;
+		}
+		&-text {
+			font-size: 4rem;
+		}
+		&-redirect {
+			&::before {
+				height: 2.6666667rem;
+				width: 2.6666667rem;
+			}
+		}
+	}
+	.pill {
+		display: none;
+	}
+	.selected-product {
+		.btn {
+			margin-top: 0.5833333rem;
+			right: 2rem;
+			padding: 0 0.25rem;
+			border: none;
+		}
+	}
+	.banner {
+		&-item {
+			&-content {
+				left: 1.3333333rem;
+				bottom: 1.3333333rem;
+				right: 1.3333333rem;
+			}
+			&-title {
+				font-size: 1.1666666667rem;
+				min-height: 3.5rem;
+				margin-bottom: 0.75rem;
+			}
+		}
+		.btn {
+			padding: 0.25rem 0.8rem;
+			font-size: 0.8333333rem;
+		}
+	}
+	.subcribe {
+		padding: 2rem 0;
+		&-title {
+			font-size: 1.1666666667rem;
+			width: 60%;
+			margin-bottom: 2rem;
+		}
+		.subcribe-form {
+			.input {
+				width: 100%;
+				margin-bottom: 1.33333333rem;
+			}
+			.btn {
 				font-size: 1rem;
 				padding-top: 0.8rem;
 				padding-bottom: 0.8rem;
 				width: 40%;
 			}
+		}
+	}
+}
+@include md-screen {
+	.banner {
+		&-item {
+			&-content {
+				bottom: 1.5rem;
+				left: 0.5rem;
+				right: 0.25rem;
+			}
+			&-title {
+				font-size: 1rem;
+				min-height: 3.5rem;
+				margin-bottom: 0.75rem;
+			}
+		}
+		.btn {
+			font-size: 0.8rem;
+			padding: 0.45rem 0.45rem;
+		}
+	}
+}
+@include lg-screen {
+	.banner {
+		&-item {
+			&-content {
+				bottom: 2rem;
+				left: 1.5rem;
+				right: 1.5rem;
+			}
+			&-title {
+				font-size: 1.3rem;
+				min-height: 3.5rem;
+				margin-bottom: 0.75rem;
+			}
+		}
+		.btn {
+			padding: 0.45rem 0.8rem;
 		}
 	}
 }

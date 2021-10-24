@@ -4,8 +4,10 @@
 	font-size: 0.75rem;
 	font-weight: bold;
 	padding: 6px 9px;
-	@include sm-screen {
+	border-radius: 2rem;
+}
+@include sm-screen {
+	.badge {
 		padding: 0.16666667rem 0.416666667rem;
 	}
-	border-radius: 2rem;
 }

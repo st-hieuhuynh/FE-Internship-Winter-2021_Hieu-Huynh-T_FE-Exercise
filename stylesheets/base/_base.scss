@@ -4,9 +4,6 @@
 }
 html {
 	font-size: $font-size-md;
-	@include sm-screen {
-		font-size: $font-size-sm;
-	}
 }
 body {
 	box-sizing: border-box;
@@ -24,9 +21,6 @@ h2 {
 }
 h3 {
 	font-size: 2rem;
-	@include sm-screen {
-		font-size: 1.5rem;
-	}
 	font-weight: 300;
 }
 h4 {
@@ -44,4 +38,13 @@ a {
 }
 span {
 	display: inline-block;
+}
+
+@include sm-screen {
+	html {
+		font-size: $font-size-sm;
+	}
+	h3 {
+		font-size: 1.5rem;
+	}
 }

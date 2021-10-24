@@ -4,47 +4,18 @@
 	margin-bottom: 0;
 	.social {
 		img {
-			@include icon-size(1rem);
-		}
-		@include sm-screen {
-			display: none;
+			width: 1rem;
 		}
 	}
 	.brand-story {
 		margin-top: -10px;
-		@include sm-screen {
-			margin-top: 0;
-			width: 100%;
-			.logo-img {
-				width: 11.44rem;
-			}
-		}
 		&-detail {
 			font-size: 0.8725rem;
-			@include sm-screen {
-				font-size: 1.1666667rem;
-			}
 		}
 	}
 	.nav-link {
 		&-title {
 			font-weight: bold;
-		}
-		@include sm-screen {
-			gap: 2rem;
-			> .list-group {
-				flex-direction: column;
-				gap: 2rem;
-			}
-		}
-	}
-	@include sm-screen {
-		.row {
-			padding-top: 2rem;
-			padding-bottom: 4rem;
-			> * {
-				width: 100%;
-			}
 		}
 	}
 }
@@ -53,4 +24,35 @@
 	border-top: 1px solid map-get($map: $color, $key: white);
 	font-size: 0.75rem;
 	text-align: center;
+}
+@include sm-screen {
+	.footer {
+		.social {
+			display: none;
+		}
+		.brand-story {
+			margin-top: 0;
+			width: 100%;
+			.logo-img {
+				width: 11.44rem;
+			}
+			&-detail {
+				font-size: 1.1666667rem;
+			}
+		}
+		.nav-link {
+			gap: 2rem;
+			> .list-group {
+				flex-direction: column;
+				gap: 2rem;
+			}
+		}
+		.row {
+			padding-top: 2rem;
+			padding-bottom: 4rem;
+			> * {
+				width: 100%;
+			}
+		}
+	}
 }

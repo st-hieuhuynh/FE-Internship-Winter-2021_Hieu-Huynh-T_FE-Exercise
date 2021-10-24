@@ -3,7 +3,25 @@
 	top: 3rem;
 	z-index: 100;
 	width: 100%;
-	@include sm-screen {
+	.menu {
+		&-category {
+			.list-group {
+				gap: 6rem;
+				font-weight: bold;
+			}
+		}
+		&-functional {
+			.icon {
+				width: 1.5rem;
+			}
+			.list-group {
+				gap: 1.5rem;
+			}
+		}
+	}
+}
+@include sm-screen {
+	.header {
 		position: fixed;
 		top: 0;
 		background-color: map-get($map: $color, $key: white);
@@ -13,26 +31,17 @@
 		.logo-img {
 			width: 10.666667rem;
 		}
-	}
-	.menu {
-		&-category {
-			.list-group {
-				gap: 6rem;
-				font-weight: bold;
-			}
-			@include sm-screen {
+		.menu {
+			&-category {
 				display: none;
 			}
-		}
-		&-functional {
-			.icon {
-				@include icon-size(1.5rem);
-				@include sm-screen {
-					@include icon-size(1.666666667rem);
+			&-functional {
+				.icon {
+					width: 1.666666667rem;
 				}
-			}
-			.list-group {
-				gap: 1.5rem;
+				.list-group {
+					gap: 2rem;
+				}
 			}
 		}
 	}

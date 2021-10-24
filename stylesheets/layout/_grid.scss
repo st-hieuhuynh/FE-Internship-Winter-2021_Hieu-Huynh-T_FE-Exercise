@@ -5,19 +5,6 @@ $num-col: 12;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 0.625rem;
-	@include sm-screen {
-		padding: 0 2rem;
-		max-width: map-get($map: $break-point, $key: small);
-	}
-	@include md-screen {
-		max-width: map-get($map: $break-point, $key: medium);
-	}
-	@include lg-screen {
-		max-width: map-get($map: $break-point, $key: large);
-	}
-	@include xl-screen {
-		max-width: map-get($map: $break-point, $key: extra-large);
-	}
 }
 .row {
 	display: flex;
@@ -36,7 +23,17 @@ $num-col: 12;
 		.col-#{$i} {
 			flex: 0 0 auto;
 			width: math.div($i, $num-col) * 100%;
-			@include sm-screen {
+		}
+	}
+}
+@include sm-screen {
+	.container {
+		padding: 0 2rem;
+		max-width: map-get($map: $break-point, $key: small);
+	}
+	.row {
+		@for $i from 1 to $num-col {
+			.col-#{$i} {
 				@if $i <= math.div($num-col, 2) {
 					width: math.div($i, math.div($num-col, 2)) * 100%;
 				} @else {
@@ -44,5 +41,15 @@ $num-col: 12;
 				}
 			}
 		}
+	}
+}
+@include md-screen {
+	.container {
+		max-width: map-get($map: $break-point, $key: medium);
+	}
+}
+@include lg-screen {
+	.container {
+		max-width: map-get($map: $break-point, $key: large);
 	}
 }

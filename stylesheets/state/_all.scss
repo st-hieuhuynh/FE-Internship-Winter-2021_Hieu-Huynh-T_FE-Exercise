@@ -2,14 +2,14 @@
 @import "typo";
 @import "image";
 
-.desktop-screen {
-	@include sm-screen {
-		display: none;
-	}
-}
 .mobile-screen {
 	display: none;
-	@include sm-screen {
+}
+@include sm-screen {
+	.desktop-screen {
+		display: none;
+	}
+	.mobile-screen {
 		display: block;
 	}
 }

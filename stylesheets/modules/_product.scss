@@ -2,17 +2,10 @@
 	position: relative;
 	&-img {
 		margin-bottom: 1rem;
-		@include sm-screen {
-			margin-bottom: 0rem;
-		}
 	}
 	&-price {
 		display: flex;
 		font-size: 1.25rem;
-		@include sm-screen {
-			font-size: 0.833333rem;
-			margin-bottom: 0.333333rem;
-		}
 		&.new-price {
 			color: map-get($map: $color, $key: red);
 			margin-right: auto;
@@ -25,7 +18,18 @@
 		position: absolute;
 		top: 1.5rem;
 		left: 1rem;
-		@include sm-screen {
+	}
+}
+@include sm-screen {
+	.product {
+		&-img {
+			margin-bottom: 0rem;
+		}
+		&-price {
+			font-size: 0.833333rem;
+			margin-bottom: 0.333333rem;
+		}
+		&-promo {
 			top: 1rem;
 			left: 0.75rem;
 		}

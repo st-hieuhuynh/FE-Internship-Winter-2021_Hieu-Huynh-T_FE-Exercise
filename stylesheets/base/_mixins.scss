@@ -1,8 +1,3 @@
-@use "sass:math";
-@mixin icon-size($size) {
-	height: auto;
-	width: $size;
-}
 //Small Screen
 @mixin sm-screen {
 	@media only screen and (max-width: map-get($map: $break-point, $key: small)) {
@@ -18,12 +13,6 @@
 //Large Screen
 @mixin lg-screen {
 	@media only screen and (max-width: map-get($map: $break-point, $key: large)) {
-		@content;
-	}
-}
-//Extra Large Screen
-@mixin xl-screen {
-	@media only screen and (max-width: map-get($map: $break-point, $key: extra-large)) {
 		@content;
 	}
 }
