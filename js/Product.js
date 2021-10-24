@@ -1,4 +1,5 @@
-export default class Product {
+import CartStore from "./CartStore.js";
+class Product {
 	constructor(product) {
 		this._id = product.id;
 		this._name = product.name;
@@ -25,17 +26,30 @@ export default class Product {
 		}      
     </div>
     ${
-			this._discount !== 0
+			this._discount === 0
 				? ``
 				: `<span class="product-promo badge">${this._discount}%</span>`
 		}    
   </div>`;
 		let addCartBtn = document.createElement("button");
 		addCartBtn.className = " btn btn-primary";
+		addCartBtn.innerHTML = "Add To Cart";
+		addCartBtn.style.display = "none";
+		addCartBtn.style.position = "absolute";
+		addCartBtn.style.top = "0";
+
 		addCartBtn.onclick = () => {};
-    div.appendChild(addCartBtn);
-    div.onmouseover = () => {
-      
-    }
+		div.appendChild(addCartBtn);
+		div.onmouseover = () => {
+			div.style.filter = "brightness(50%)";
+			addCartBtn.style.display = "block";
+			addCartBtn.style.filter = "brightness(100%)";
+		};
+		div.onmouseout = () => {
+			div.style.filter = "brightness(100%)";
+			addCartBtn.style.display = "none";
+		};
+		return div;
 	}
 }
+export default Product;
