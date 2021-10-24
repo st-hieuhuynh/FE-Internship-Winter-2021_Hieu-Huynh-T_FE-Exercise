@@ -34,19 +34,17 @@ class Product {
 		let addCartBtn = document.createElement("button");
 		addCartBtn.className = " btn btn-primary";
 		addCartBtn.innerHTML = "Add To Cart";
-		addCartBtn.style.display = "none";
-		addCartBtn.style.position = "absolute";
-		addCartBtn.style.top = "0";
+		addCartBtn.style.cssText = "display: none; position: absolute; margin: 0";
 
-		addCartBtn.onclick = () => {};
+		addCartBtn.onclick = () => {
+			console.log(this._id);
+		};
 		div.appendChild(addCartBtn);
 		div.onmouseover = () => {
-			div.style.filter = "brightness(50%)";
 			addCartBtn.style.display = "block";
 			addCartBtn.style.filter = "brightness(100%)";
 		};
 		div.onmouseout = () => {
-			div.style.filter = "brightness(100%)";
 			addCartBtn.style.display = "none";
 		};
 		return div;
