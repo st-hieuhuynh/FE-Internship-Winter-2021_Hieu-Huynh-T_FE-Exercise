@@ -19,10 +19,37 @@ $num-col: 12;
 	.col {
 		flex: 1;
 	}
-	@for $i from 1 to $num-col {
+	@for $i from 1 to $num-col + 1 {
 		.col-#{$i} {
 			flex: 0 0 auto;
 			width: math.div($i, $num-col) * 100%;
+		}
+	}
+}
+
+@include lg-screen {
+	.container {
+		max-width: map-get($map: $break-point, $key: large);
+	}
+	.row {
+		@for $i from 1 to $num-col {
+			.col-lg-#{$i} {
+				flex: 0 0 auto;
+				width: math.div($i, $num-col) * 100%;
+			}
+		}
+	}
+}
+@include md-screen {
+	.container {
+		max-width: map-get($map: $break-point, $key: medium);
+	}
+	.row {
+		@for $i from 1 to $num-col + 1 {
+			.col-md-#{$i} {
+				flex: 0 0 auto;
+				width: math.div($i, $num-col) * 100%;
+			}
 		}
 	}
 }
@@ -32,24 +59,11 @@ $num-col: 12;
 		max-width: map-get($map: $break-point, $key: small);
 	}
 	.row {
-		@for $i from 1 to $num-col {
-			.col-#{$i} {
-				@if $i <= math.div($num-col, 2) {
-					width: math.div($i, math.div($num-col, 2)) * 100%;
-				} @else {
-					width: 100%;
-				}
+		@for $i from 1 to $num-col + 1 {
+			.col-sm-#{$i} {
+				flex: 0 0 auto;
+				width: math.div($i, $num-col) * 100%;
 			}
 		}
-	}
-}
-@include md-screen {
-	.container {
-		max-width: map-get($map: $break-point, $key: medium);
-	}
-}
-@include lg-screen {
-	.container {
-		max-width: map-get($map: $break-point, $key: large);
 	}
 }

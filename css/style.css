@@ -180,7 +180,7 @@ span {
   display: inline-block;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 577px) {
   html {
     font-size: 12px;
   }
@@ -602,7 +602,7 @@ span {
   display: none;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 577px) {
   .desktop-screen {
     display: none;
   }
@@ -676,55 +676,168 @@ span {
   flex: 0 0 auto;
   width: 91.6666666667%;
 }
+.row .col-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 991px) {
+  .container {
+    max-width: 990px;
+  }
+
+  .row .col-lg-1 {
+    flex: 0 0 auto;
+    width: 8.3333333333%;
+  }
+  .row .col-lg-2 {
+    flex: 0 0 auto;
+    width: 16.6666666667%;
+  }
+  .row .col-lg-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .row .col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+  }
+  .row .col-lg-5 {
+    flex: 0 0 auto;
+    width: 41.6666666667%;
+  }
+  .row .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .row .col-lg-7 {
+    flex: 0 0 auto;
+    width: 58.3333333333%;
+  }
+  .row .col-lg-8 {
+    flex: 0 0 auto;
+    width: 66.6666666667%;
+  }
+  .row .col-lg-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+  .row .col-lg-10 {
+    flex: 0 0 auto;
+    width: 83.3333333333%;
+  }
+  .row .col-lg-11 {
+    flex: 0 0 auto;
+    width: 91.6666666667%;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .row .col-md-1 {
+    flex: 0 0 auto;
+    width: 8.3333333333%;
+  }
+  .row .col-md-2 {
+    flex: 0 0 auto;
+    width: 16.6666666667%;
+  }
+  .row .col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .row .col-md-4 {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+  }
+  .row .col-md-5 {
+    flex: 0 0 auto;
+    width: 41.6666666667%;
+  }
+  .row .col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .row .col-md-7 {
+    flex: 0 0 auto;
+    width: 58.3333333333%;
+  }
+  .row .col-md-8 {
+    flex: 0 0 auto;
+    width: 66.6666666667%;
+  }
+  .row .col-md-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+  .row .col-md-10 {
+    flex: 0 0 auto;
+    width: 83.3333333333%;
+  }
+  .row .col-md-11 {
+    flex: 0 0 auto;
+    width: 91.6666666667%;
+  }
+  .row .col-md-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 577px) {
   .container {
     padding: 0 2rem;
     max-width: 576px;
   }
 
-  .row .col-1 {
+  .row .col-sm-1 {
+    flex: 0 0 auto;
+    width: 8.3333333333%;
+  }
+  .row .col-sm-2 {
+    flex: 0 0 auto;
     width: 16.6666666667%;
   }
-  .row .col-2 {
+  .row .col-sm-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .row .col-sm-4 {
+    flex: 0 0 auto;
     width: 33.3333333333%;
   }
-  .row .col-3 {
+  .row .col-sm-5 {
+    flex: 0 0 auto;
+    width: 41.6666666667%;
+  }
+  .row .col-sm-6 {
+    flex: 0 0 auto;
     width: 50%;
   }
-  .row .col-4 {
+  .row .col-sm-7 {
+    flex: 0 0 auto;
+    width: 58.3333333333%;
+  }
+  .row .col-sm-8 {
+    flex: 0 0 auto;
     width: 66.6666666667%;
   }
-  .row .col-5 {
+  .row .col-sm-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+  .row .col-sm-10 {
+    flex: 0 0 auto;
     width: 83.3333333333%;
   }
-  .row .col-6 {
+  .row .col-sm-11 {
+    flex: 0 0 auto;
+    width: 91.6666666667%;
+  }
+  .row .col-sm-12 {
+    flex: 0 0 auto;
     width: 100%;
-  }
-  .row .col-7 {
-    width: 100%;
-  }
-  .row .col-8 {
-    width: 100%;
-  }
-  .row .col-9 {
-    width: 100%;
-  }
-  .row .col-10 {
-    width: 100%;
-  }
-  .row .col-11 {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media only screen and (max-width: 990px) {
-  .container {
-    max-width: 990px;
   }
 }
 .flex {
@@ -764,7 +877,7 @@ span {
   gap: 1.5rem;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 577px) {
   .header {
     position: fixed;
     top: 0;
@@ -811,7 +924,7 @@ span {
   text-align: center;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 577px) {
   .footer .social {
     display: none;
   }
@@ -861,7 +974,7 @@ span {
   background-color: #fbb03b;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 577px) {
   .btn {
     padding: 0.25rem 0.8rem;
     font-size: 0.8333333rem;
@@ -880,7 +993,7 @@ span {
   border-radius: 2rem;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 577px) {
   .badge {
     padding: 0.16666667rem 0.416666667rem;
   }
@@ -919,7 +1032,7 @@ span {
   color: var(--color-gray-2);
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 577px) {
   .benefit-item {
     display: flex;
     flex-direction: row;
@@ -956,7 +1069,7 @@ span {
   left: 1rem;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 577px) {
   .product-img {
     margin-bottom: 0rem;
   }
@@ -1116,7 +1229,38 @@ span {
   width: 30%;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 991px) {
+  .banner-item-content {
+    bottom: 2rem;
+    left: 1.5rem;
+    right: 1.5rem;
+  }
+  .banner-item-title {
+    font-size: 1.3rem;
+    min-height: 3.5rem;
+    margin-bottom: 0.75rem;
+  }
+  .banner .btn {
+    padding: 0.45rem 0.8rem;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .banner-item-content {
+    bottom: 1.5rem;
+    left: 0.5rem;
+    right: 0.25rem;
+  }
+  .banner-item-title {
+    font-size: 1rem;
+    min-height: 3.5rem;
+    margin-bottom: 0.75rem;
+  }
+  .banner .btn {
+    font-size: 0.8rem;
+    padding: 0.45rem 0.45rem;
+  }
+}
+@media only screen and (max-width: 577px) {
   .hero {
     margin-bottom: 2rem;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/home-banner.png);
@@ -1178,37 +1322,6 @@ span {
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     width: 40%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .banner-item-content {
-    bottom: 1.5rem;
-    left: 0.5rem;
-    right: 0.25rem;
-  }
-  .banner-item-title {
-    font-size: 1rem;
-    min-height: 3.5rem;
-    margin-bottom: 0.75rem;
-  }
-  .banner .btn {
-    font-size: 0.8rem;
-    padding: 0.45rem 0.45rem;
-  }
-}
-@media only screen and (max-width: 990px) {
-  .banner-item-content {
-    bottom: 2rem;
-    left: 1.5rem;
-    right: 1.5rem;
-  }
-  .banner-item-title {
-    font-size: 1.3rem;
-    min-height: 3.5rem;
-    margin-bottom: 0.75rem;
-  }
-  .banner .btn {
-    padding: 0.45rem 0.8rem;
   }
 }
 
