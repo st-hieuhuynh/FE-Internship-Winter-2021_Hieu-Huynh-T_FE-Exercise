@@ -144,6 +144,7 @@ span {
 	position: absolute;
 	top: 3rem;
 	z-index: 100;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .logo-img {
 	width: 8.6875rem;
@@ -157,6 +158,14 @@ span {
 }
 .menu-functional .icon {
 	width: 1.5rem;
+}
+/* Shopping cart */
+.cart-screen {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background-color: var(--color-white);
+	z-index: 10;
 }
 /* hero */
 .hero {

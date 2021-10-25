@@ -8,18 +8,18 @@ class Product {
 		this._discount = product.discount;
 	}
 	addCartBtnHandler() {
-		let cartStore = new CartStore();
-		let cart = cartStore._cart;
-		if (cart.filter((product) => product.id === this._id)) {
-			cartStore.increaseProductQuantity(this._id);
+		let cart = CartStore._cart;
+		console.log(this._id);
+		if (cart.some((product) => product.id === this._id)) {
+			CartStore.increaseProductQuantity(this._id);
 		} else {
-			cartStore.addProductToCart(this._id);
+			CartStore.addProductToCart(this._id);
 		}
 	}
 	render() {
-		let div = document.createElement("div");
-		div.className = "product";
-		div.innerHTML = `
+		let $div = document.createElement("div");
+		$div.className = "product";
+		$div.innerHTML = `
     <img src="${this._image}" alt="${this._name}" class="product-img"/>
     <h4 class="product-title">${this._name}</h4>
     <div class="product-price">
@@ -40,21 +40,20 @@ class Product {
 				: `<span class="product-promo badge">${this._discount}%</span>`
 		}    
   </div>`;
-		let addCartBtn = document.createElement("button");
-		addCartBtn.className = " btn btn-primary";
-		addCartBtn.innerHTML = "Add To Cart";
-		addCartBtn.style.cssText =
+		let $addCartBtn = document.createElement("button");
+		$addCartBtn.className = " btn btn-primary";
+		$addCartBtn.innerHTML = "Add To Cart";
+		$addCartBtn.style.cssText =
 			"display: none; position: absolute; top:40%; bottom: auto; left: 50%;right:auto; transform: translateX(-50%);border:none";
-
-		addCartBtn.onclick = this.addCartBtnHandler();
-		div.appendChild(addCartBtn);
-		div.onmouseover = () => {
-			addCartBtn.style.display = "block";
+		$addCartBtn.onclick = () => this.addCartBtnHandler();
+		$div.appendChild($addCartBtn);
+		$div.onmouseover = () => {
+			$addCartBtn.style.display = "block";
 		};
-		div.onmouseout = () => {
-			addCartBtn.style.display = "none";
+		$div.onmouseout = () => {
+			$addCartBtn.style.display = "none";
 		};
-		return div;
+		return $div;
 	}
 }
 export default Product;
