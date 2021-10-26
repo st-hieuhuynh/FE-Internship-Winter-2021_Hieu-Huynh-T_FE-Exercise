@@ -1,4 +1,4 @@
-import CartStore from "./CartStore.js";
+import Cart from "./Cart.js";
 class Product {
 	constructor(product) {
 		this._id = product.id;
@@ -8,12 +8,11 @@ class Product {
 		this._discount = product.discount;
 	}
 	addCartBtnHandler() {
-		let cart = CartStore._cart;
-		console.log(this._id);
-		if (cart.some((product) => product.id === this._id)) {
-			CartStore.increaseProductQuantity(this._id);
+		let cart = Cart.productList;
+		if (cart.some((product) => product.productDetail._id === this._id)) {
+			Cart.increaseProductQuantity(this._id);
 		} else {
-			CartStore.addProductToCart(this._id);
+			Cart.addProductToCart(this);
 		}
 	}
 	render() {

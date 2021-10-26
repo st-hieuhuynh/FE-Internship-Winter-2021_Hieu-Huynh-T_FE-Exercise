@@ -14,4 +14,15 @@ let list = ProductData.map((element) => {
 	return $li;
 });
 $productSection.append(...list);
-let $cartSection = document.querySelector(".cart-table-body");
+// ---- cart table body handle ----
+const $cartSection = document.querySelector(".cart-table-body");
+const $total = $cartSection.querySelector();
+const getCartItem = () => Cart.productList.map((item) => Cart.renderItem(item));
+// init cart at load
+$cartSection.append(...getCartItem());
+// reload cart
+window.addEventListener("storage", () => {
+	$cartSection.replaceChildren(...getCartItem());
+	console.log("change cart");
+	$cartItem = getCartItem();
+});

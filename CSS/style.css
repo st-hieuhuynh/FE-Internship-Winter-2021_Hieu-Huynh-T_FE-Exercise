@@ -167,6 +167,14 @@ span {
 	background-color: var(--color-white);
 	z-index: 10;
 }
+.cart-table {
+	width: 100%;
+}
+.cart-screen .product-image {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
 /* hero */
 .hero {
 	position: relative;
