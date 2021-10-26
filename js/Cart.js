@@ -47,10 +47,10 @@ class Cart {
 		tRow.className = "cart-product";
 		// ====Info product ====
 		const $infoProduct = `
-		<td class="product">
-		<img class="product-image" src="${_productDetail._image}" alt="${_productDetail._name}" />
-		<h4 class="product-title">
-		${_productDetail._name}<span class="product-id">${_productDetail._id}</span>
+		<td class="cart-product-info">
+		<img class="cart-product-image" src="${_productDetail._image}" alt="${_productDetail._name}" />
+		<h4 class="cart-product-title">
+		${_productDetail._name}<span class="cart-product-id">${_productDetail._id}</span>
 		</h4>
 		</td>
 		<td>White</td>
@@ -84,10 +84,14 @@ class Cart {
 
 		// td quantity
 		const $tdQty = document.createElement("td");
-		$tdQty.append($decreaseBtn, $qtyText, $increaseBtn);
+		const $divQty = document.createElement("div");
+
+		$divQty.className = "cart-product-qty flex f-center-x justify-center gap-m";
+		$divQty.append($decreaseBtn, $qtyText, $increaseBtn);
+		$tdQty.append($divQty);
 		// ==== Price ====
 		const $tdPrice = document.createElement("td");
-		$tdPrice.className = "product-price";
+		$tdPrice.className = "cart-product-price";
 		$tdPrice.innerHTML = `<span>$${_productDetail._price}</span>`;
 		// ==== Remove Product ====
 		// button rm

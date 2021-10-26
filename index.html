@@ -19,6 +19,7 @@
 								<img
 									class="logo-img desktop-screen"
 									src="./assets/img/Logo.png"
+									id="logo-header"
 									alt="E-shop"
 								/>
 								<img
@@ -49,6 +50,7 @@
 									><img
 										class="icon desktop-screen"
 										src="./assets/img/search-icon.png"
+										id="search-btn"
 										alt="search"
 									/>
 									<img
@@ -63,7 +65,9 @@
 									><img
 										class="icon desktop-screen"
 										src="./assets/img/cart-icon.png"
-										alt="cart" /><img
+										id="cart-btn"
+										alt="cart" />
+									<img
 										class="icon mobile-screen"
 										src="./assets/img/user-icon-dark.png"
 										alt="search"
@@ -73,6 +77,7 @@
 								<a href="#"
 									><img
 										class="icon desktop-screen"
+										id="user-btn"
 										src="./assets/img/user-icon.png"
 										alt="user desktop-screen" /><img
 										class="icon mobile-screen"
@@ -85,41 +90,41 @@
 				</div>
 			</div>
 		</header>
-		<main class="main">
-			<section class="cart-screen">
-				<div class="container">
-					<h3 class="cart-screen-title">Shopping Cart</h3>
-					<table class="cart-table">
-						<thead>
-							<tr>
-								<th>Product</th>
-								<th>Color</th>
-								<th>Size</th>
-								<th>Amount</th>
-								<th>Price</th>
-								<th></th>
-							</tr>
-						</thead>
-						<tbody class="cart-table-body"></tbody>
-					</table>
-					<div class="row">
-						<div class="col-4">
-							<a href="#" class="go-back">Continue Shopping</a>
+		<section class="cart-screen">
+			<div class="container">
+				<h3 class="cart-screen-title mb-l">Shopping Cart</h3>
+				<table class="cart-table">
+					<thead>
+						<tr>
+							<th>Product</th>
+							<th>Color</th>
+							<th>Size</th>
+							<th>Amount</th>
+							<th>Price</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody class="cart-table-body"></tbody>
+				</table>
+				<div class="row">
+					<div class="col-4">
+						<a href="#" class="go-back">Continue Shopping</a>
+					</div>
+					<div class="col-8">
+						<form class="promo-code-form">
+							<input type="text" class="input" />
+							<button>Apply</button>
+						</form>
+						<div class="total">
+							<p>Total cost:</p>
+							<span class="total-price">$0</span>
 						</div>
-						<div class="col-8">
-							<form class="promo-code-form">
-								<input type="text" class="input" />
-								<button>Apply</button>
-							</form>
-							<div class="total">
-								<p>Total cost:</p>
-								<span>$159.99</span>
-							</div>
-							<button>Checkout</button>
-						</div>
+						<button class="btn btn-primary unbordered">Checkout</button>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
+		<main class="main">
 			<section class="hero mb-xl">
 				<div class="container">
 					<div class="hero-container">
@@ -233,9 +238,7 @@
 				<div class="container">
 					<h3 class="selected-title mb-xl">Selected just for you</h3>
 					<ul class="row"></ul>
-					<button class="btn btn-default">
-						SHOW MORE
-					</button>
+					<button class="btn btn-default">SHOW MORE</button>
 				</div>
 			</section>
 			<section class="benefit mb-xl">

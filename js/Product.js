@@ -23,12 +23,13 @@ class Product {
     <h4 class="product-title">${this._name}</h4>
     <div class="product-price">
     ${
-			this._discount !== 0
+			this._discount === 0
 				? `<span class="product-price">$${this._price}</span>`
 				: `
-      <span class="product-price new-price">$${
-				(this._price * (100 - this._discount)) / 100
-			}</span>
+      <span class="product-price new-price">$${(
+				(this._price * (100 + this._discount)) /
+				100
+			).toFixed(2)}</span>
       <span class="product-price old-price">$${this._price}</span>
       `
 		}      
