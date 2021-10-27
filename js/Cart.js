@@ -50,7 +50,7 @@ class Cart {
 		<td class="cart-product-info">
 		<img class="cart-product-image" src="${_productDetail._image}" alt="${_productDetail._name}" />
 		<h4 class="cart-product-title">
-		${_productDetail._name}<span class="cart-product-id">${_productDetail._id}</span>
+		${_productDetail._name} <span class="cart-product-id">${_productDetail._id}</span>
 		</h4>
 		</td>
 		<td>White</td>
@@ -96,7 +96,7 @@ class Cart {
 		// ==== Remove Product ====
 		// button rm
 		const $removeBtn = document.createElement("button");
-		$removeBtn.innerHTML = "x";
+		$removeBtn.innerHTML = "&#10005";
 		$removeBtn.className = "cart-product-remover";
 		$removeBtn.onclick = () => {
 			tRow.parentNode.removeChild(tRow);
