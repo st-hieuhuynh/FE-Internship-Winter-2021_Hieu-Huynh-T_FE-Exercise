@@ -53,17 +53,3 @@ $num-col: 12;
 		}
 	}
 }
-@include sm-screen {
-	.container {
-		padding: 0 2rem;
-		max-width: map-get($map: $break-point, $key: small);
-	}
-	.row {
-		@for $i from 1 to $num-col + 1 {
-			.col-sm-#{$i} {
-				flex: 0 0 auto;
-				width: math.div($i, $num-col) * 100%;
-			}
-		}
-	}
-}

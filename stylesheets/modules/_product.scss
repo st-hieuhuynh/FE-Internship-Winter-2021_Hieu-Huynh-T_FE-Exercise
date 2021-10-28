@@ -20,7 +20,7 @@
 		left: 1rem;
 	}
 }
-@include sm-screen {
+@include md-screen {
 	.product {
 		&-img {
 			margin-bottom: 0rem;

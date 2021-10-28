@@ -5,7 +5,7 @@
 .mobile-screen {
 	display: none;
 }
-@include sm-screen {
+@include md-screen {
 	.desktop-screen {
 		display: none;
 	}

@@ -25,7 +25,7 @@
 	font-size: 0.75rem;
 	text-align: center;
 }
-@include sm-screen {
+@include md-screen {
 	.footer {
 		.social {
 			display: none;

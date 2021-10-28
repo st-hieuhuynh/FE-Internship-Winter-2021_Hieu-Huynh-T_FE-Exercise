@@ -180,7 +180,27 @@ span {
   display: inline-block;
 }
 
-@media only screen and (max-width: 577px) {
+.flex {
+  display: flex;
+}
+
+.f-center-x {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
   html {
     font-size: 12px;
   }
@@ -602,7 +622,7 @@ span {
   display: none;
 }
 
-@media only screen and (max-width: 577px) {
+@media only screen and (max-width: 768px) {
   .desktop-screen {
     display: none;
   }
@@ -681,7 +701,7 @@ span {
   width: 100%;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 990px) {
   .container {
     max-width: 990px;
   }
@@ -731,7 +751,7 @@ span {
     width: 91.6666666667%;
   }
 }
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
   .container {
     max-width: 768px;
   }
@@ -785,81 +805,6 @@ span {
     width: 100%;
   }
 }
-@media only screen and (max-width: 577px) {
-  .container {
-    padding: 0 2rem;
-    max-width: 576px;
-  }
-
-  .row .col-sm-1 {
-    flex: 0 0 auto;
-    width: 8.3333333333%;
-  }
-  .row .col-sm-2 {
-    flex: 0 0 auto;
-    width: 16.6666666667%;
-  }
-  .row .col-sm-3 {
-    flex: 0 0 auto;
-    width: 25%;
-  }
-  .row .col-sm-4 {
-    flex: 0 0 auto;
-    width: 33.3333333333%;
-  }
-  .row .col-sm-5 {
-    flex: 0 0 auto;
-    width: 41.6666666667%;
-  }
-  .row .col-sm-6 {
-    flex: 0 0 auto;
-    width: 50%;
-  }
-  .row .col-sm-7 {
-    flex: 0 0 auto;
-    width: 58.3333333333%;
-  }
-  .row .col-sm-8 {
-    flex: 0 0 auto;
-    width: 66.6666666667%;
-  }
-  .row .col-sm-9 {
-    flex: 0 0 auto;
-    width: 75%;
-  }
-  .row .col-sm-10 {
-    flex: 0 0 auto;
-    width: 83.3333333333%;
-  }
-  .row .col-sm-11 {
-    flex: 0 0 auto;
-    width: 91.6666666667%;
-  }
-  .row .col-sm-12 {
-    flex: 0 0 auto;
-    width: 100%;
-  }
-}
-.flex {
-  display: flex;
-}
-
-.f-center-x {
-  align-items: center;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
-}
-
-.justify-end {
-  justify-content: flex-end;
-}
-
 .header {
   position: absolute;
   top: 3rem;
@@ -877,7 +822,7 @@ span {
   gap: 1.5rem;
 }
 
-@media only screen and (max-width: 577px) {
+@media only screen and (max-width: 768px) {
   .header {
     position: fixed;
     top: 0;
@@ -924,7 +869,7 @@ span {
   text-align: center;
 }
 
-@media only screen and (max-width: 577px) {
+@media only screen and (max-width: 768px) {
   .footer .social {
     display: none;
   }
@@ -974,7 +919,7 @@ span {
   background-color: #fbb03b;
 }
 
-@media only screen and (max-width: 577px) {
+@media only screen and (max-width: 768px) {
   .btn {
     padding: 0.25rem 0.8rem;
     font-size: 0.8333333rem;
@@ -993,7 +938,7 @@ span {
   border-radius: 2rem;
 }
 
-@media only screen and (max-width: 577px) {
+@media only screen and (max-width: 768px) {
   .badge {
     padding: 0.16666667rem 0.416666667rem;
   }
@@ -1032,7 +977,7 @@ span {
   color: var(--color-gray-2);
 }
 
-@media only screen and (max-width: 577px) {
+@media only screen and (max-width: 768px) {
   .benefit-item {
     display: flex;
     flex-direction: row;
@@ -1069,7 +1014,7 @@ span {
   left: 1rem;
 }
 
-@media only screen and (max-width: 577px) {
+@media only screen and (max-width: 768px) {
   .product-img {
     margin-bottom: 0rem;
   }
@@ -1194,9 +1139,9 @@ span {
 }
 .banner-item-content {
   position: absolute;
-  bottom: 53px;
-  left: 40px;
-  right: 40px;
+  bottom: 3.3125rem;
+  left: 2.5rem;
+  right: 2.5rem;
 }
 .banner-item-title {
   font-size: 1.5rem;
@@ -1229,26 +1174,11 @@ span {
   width: 30%;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 990px) {
   .banner-item-content {
     bottom: 2rem;
-    left: 1.5rem;
-    right: 1.5rem;
-  }
-  .banner-item-title {
-    font-size: 1.3rem;
-    min-height: 3.5rem;
-    margin-bottom: 0.75rem;
-  }
-  .banner .btn {
-    padding: 0.45rem 0.8rem;
-  }
-}
-@media only screen and (max-width: 769px) {
-  .banner-item-content {
-    bottom: 1.5rem;
-    left: 0.5rem;
-    right: 0.25rem;
+    left: 1rem;
+    right: 1rem;
   }
   .banner-item-title {
     font-size: 1rem;
@@ -1260,7 +1190,7 @@ span {
     padding: 0.45rem 0.45rem;
   }
 }
-@media only screen and (max-width: 577px) {
+@media only screen and (max-width: 768px) {
   .hero {
     margin-bottom: 2rem;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/home-banner.png);
