@@ -163,11 +163,6 @@ span {
 	width: 1.5rem;
 }
 /* Shopping cart */
-table,
-th,
-td {
-	border: 1px solid black;
-}
 .cart-screen {
 	display: none;
 	position: relative;
@@ -180,9 +175,10 @@ td {
 	font-weight: bold;
 }
 .cart-table {
-	margin: 0 auto;
-	table-layout: auto;
-	border-collapse: collapse;
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: separate;
+	border-spacing: 0 2rem;
 }
 .cart-table thead {
 	color: #c1c1c1;
@@ -197,8 +193,14 @@ td {
 	box-sizing: border-box;
 	vertical-align: middle;
 }
+.cart-table tr th:nth-child(1) {
+	width: 40%;
+}
 .cart-table th:first-child {
 	text-align: left;
+}
+.cart-table td:last-child {
+	text-align: right;
 }
 .cart-table-body {
 	text-align: center;
@@ -240,7 +242,7 @@ td {
 	padding: 5px;
 	border-radius: 2rem;
 	font-weight: bold;
-	margin: 0 auto;
+	margin: 0 1rem;
 }
 .cart-product-qty button {
 	cursor: pointer;
@@ -252,10 +254,39 @@ td {
 	font-weight: bold;
 }
 .cart-product-remover {
+	cursor: pointer;
 	border: none;
 	font-weight: bold;
 	background-color: transparent;
 	font-size: 1rem;
+}
+.go-back {
+	font-weight: bold;
+}
+.go-back::before {
+	content: "\27F5";
+	font-size: 1.5rem;
+	margin-right: 1rem;
+}
+.promo-code-form {
+	border: 2px solid gray;
+	border-radius: 2rem;
+}
+.promo-code-form .input:focus {
+	outline: none;
+}
+.promo-code-form button {
+	margin-right: 1rem;
+	cursor: pointer;
+	transform: rotateZ(-45deg);
+	border: none;
+	background-color: transparent;
+}
+.total .total-price {
+	font-weight: bold;
+}
+.cart-screen .btn {
+	width: 10.875rem;
 }
 /* hero */
 .hero {
