@@ -58,18 +58,33 @@ const toggleCartScreen = () => {
 		// $iconsDesktop.forEach((element) => {});
 	}
 };
-$cartBtn.onclick = () => {
-	toggleCartScreen();
-};
 // ---- cart table body handle ----
 const $cartSection = document.querySelector(".cart-table-body");
-const $total = $cartSection.querySelector("total");
+const $total = document.querySelector(".total-price");
+const $quantityBadge = document.querySelector(".cart-btn-badge");
 const getCartItem = () => Cart.productList.map((item) => Cart.renderItem(item));
 // init cart at load
-$cartSection.append(...getCartItem());
+
 // reload cart
-window.addEventListener("storage", () => {
+const loadPriceAndQty = () => {
+	$total.innerHTML =
+		"$" +
+		Cart.productList
+			.reduce((prev, cur) => prev + cur.productDetail._price * cur.quantity, 0)
+			.toFixed(2);
+	$quantityBadge.innerHTML = Cart.productList.reduce(
+		(prev, curr) => prev + curr.quantity,
+		0
+	);
+};
+window.onload = () => {
+	loadPriceAndQty();
+};
+$cartBtn.onclick = () => {
 	$cartSection.replaceChildren(...getCartItem());
-	console.log("change cart");
-	$cartItem = getCartItem();
+	toggleCartScreen();
+};
+
+window.addEventListener("storage", () => {
+	loadPriceAndQty();
 });

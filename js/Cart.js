@@ -64,14 +64,14 @@ class Cart {
 		$decreaseBtn.innerHTML = "-";
 		$decreaseBtn.onclick = () => {
 			this.decreaseProductQuantity(_productDetail._id);
-			$qtyText.innerText = product.quantity - 1;
+			$qtyText.innerText = Number.parseInt($qtyText.innerText) - 1;
 		};
 		// button increase qty
 		const $increaseBtn = document.createElement("button");
 		$increaseBtn.innerHTML = "+";
 		$increaseBtn.onclick = () => {
 			this.increaseProductQuantity(_productDetail._id);
-			$qtyText.innerText = product.quantity + 1;
+			$qtyText.innerText = Number.parseInt($qtyText.innerText) + 1;
 		};
 		// event qty
 		$qtyText.addEventListener("change", () => {
