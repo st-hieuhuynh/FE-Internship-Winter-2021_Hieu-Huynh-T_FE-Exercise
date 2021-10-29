@@ -19,7 +19,7 @@ if (a <= 19) {
 // Excercise 3
 console.log("Excercise 3: a = '66*'");
 a = "66*";
-function divisionMaskNumber(numMasked, divisor) {
+function divideMaskNumber(numMasked, divisor) {
 	var returnArr = [];
 	var indexOfAstrsk = numMasked.indexOf("*");
 	for (var i = 0; i <= 9; i++) {
