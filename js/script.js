@@ -15,20 +15,21 @@ const $menuCategoryText = document
 const $searchBtn = document.querySelector("#search-btn");
 const $userBtn = document.querySelector("#user-btn");
 const $cartBtn = document.querySelector("#cart-btn");
-let toggleHeaderMode = (isLight) => {
-	if (isLight) {
+let isMenuLight = true;
+let toggleHeaderMode = () => {
+	if (isMenuLight) {
 		$logoImage.src = "./assets/img/Logo-dark.png";
 		$searchBtn.src = "./assets/img/search-icon-dark.png";
 		$userBtn.src = "./assets/img/user-icon-dark.png";
 		$cartBtn.src = "./assets/img/cart-icon-dark.png";
-		$menuCategoryText.forEach((ele) => (ele.className = ""));
 	} else {
 		$logoImage.src = "./assets/img/Logo.png";
 		$searchBtn.src = "./assets/img/search-icon.png";
 		$cartBtn.src = "./assets/img/cart-icon.png";
 		$userBtn.src = "./assets/img/user-icon.png";
-		$menuCategoryText.forEach((ele) => (ele.className = "text-primary"));
 	}
+	$menuCategoryText.forEach((ele) => ele.classList.toggle("text-primary"));
+	isMenuLight = !isMenuLight;
 };
 // ---- render list product ----
 let list = ProductData.map((element) => {
@@ -42,22 +43,15 @@ $productSection.append(...list);
 // ---- cart button ----
 const $iconsDesktop = document.getElementsByClassName("icon");
 const $cartScreen = document.querySelector(".cart-screen");
+const $goBackBtn = document.querySelector(".go-back");
 $cartBtn.src;
 const toggleCartScreen = () => {
-	let cartScreenStyle = $cartScreen.style;
-	if (cartScreenStyle.display !== "none") {
-		cartScreenStyle.display = "none";
-		toggleHeaderMode(false);
-		$main.style.display = "block";
-		$footer.style.display = "block";
-	} else {
-		cartScreenStyle.display = "block";
-		toggleHeaderMode(true);
-		$main.style.display = "none";
-		$footer.style.display = "none";
-		// $iconsDesktop.forEach((element) => {});
-	}
+	$cartScreen.classList.toggle("hide");
+	$main.classList.toggle("hide");
+	$footer.classList.toggle("hide");
+	toggleHeaderMode();
 };
+$goBackBtn.onclick = toggleCartScreen;
 // ---- cart table body handle ----
 const $cartSection = document.querySelector(".cart-table-body");
 const $total = document.querySelector(".total-price");
@@ -84,7 +78,6 @@ $cartBtn.onclick = () => {
 	$cartSection.replaceChildren(...getCartItem());
 	toggleCartScreen();
 };
-
 window.addEventListener("storage", () => {
 	loadPriceAndQty();
 });

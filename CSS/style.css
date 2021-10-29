@@ -175,8 +175,10 @@ span {
 	background-color: var(--color-primary);
 }
 /* Shopping cart */
-.cart-screen {
+.hide {
 	display: none;
+}
+.cart-screen {
 	position: relative;
 	padding-top: 10rem;
 	background-color: var(--color-white);
@@ -261,6 +263,9 @@ span {
 	border: none;
 	background-color: transparent;
 	font-size: 1.25rem;
+}
+.cart-product-qty button:disabled {
+	opacity: 0.5;
 }
 .cart-product-price {
 	font-weight: bold;

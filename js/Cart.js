@@ -59,32 +59,33 @@ class Cart {
 		// Quantity text
 		const $qtyText = document.createElement("span");
 		$qtyText.innerText = product.quantity;
+		const checkValidQty = () => {
+			if ($qtyText.innerText <= 1) {
+				$decreaseBtn.disabled = true;
+			} else {
+				$decreaseBtn.disabled = false;
+			}
+		};
 		// button decrease qty
 		const $decreaseBtn = document.createElement("button");
 		$decreaseBtn.innerHTML = "-";
 		$decreaseBtn.onclick = () => {
 			this.decreaseProductQuantity(_productDetail._id);
-			$qtyText.innerText = Number.parseInt($qtyText.innerText) - 1;
+			$qtyText.innerText = +$qtyText.innerText - 1;
+			checkValidQty();
 		};
 		// button increase qty
 		const $increaseBtn = document.createElement("button");
 		$increaseBtn.innerHTML = "+";
 		$increaseBtn.onclick = () => {
 			this.increaseProductQuantity(_productDetail._id);
-			$qtyText.innerText = Number.parseInt($qtyText.innerText) + 1;
+			$qtyText.innerText = +$qtyText.innerText + 1;
+			checkValidQty();
 		};
-		// event qty
-		$qtyText.addEventListener("change", () => {
-			if ($qtyText.innerText <= 1) {
-				$decreaseBtn.disabled = true;
-			} else {
-				$decreaseBtn.disabled = false;
-			}
-		});
-
 		// td quantity
 		const $tdQty = document.createElement("td");
 		const $divQty = document.createElement("div");
+		checkValidQty();
 
 		$divQty.className = "cart-product-qty flex f-center-x justify-center gap-m";
 		$divQty.append($decreaseBtn, $qtyText, $increaseBtn);
