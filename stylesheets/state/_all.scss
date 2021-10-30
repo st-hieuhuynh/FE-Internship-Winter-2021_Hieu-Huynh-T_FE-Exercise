@@ -1,0 +1,15 @@
+@import "spacing";
+@import "typo";
+@import "image";
+
+.mobile-screen {
+	display: none;
+}
+@include md-screen {
+	.desktop-screen {
+		display: none;
+	}
+	.mobile-screen {
+		display: block;
+	}
+}

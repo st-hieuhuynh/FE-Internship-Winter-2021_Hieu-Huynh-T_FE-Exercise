@@ -1,0 +1,29 @@
+.btn {
+	display: inline-block;
+	padding: 0.875rem 1.5rem;
+	font-family: inherit;
+	font-weight: bold;
+	font-size: 0.8125rem;
+	cursor: pointer;
+	border-radius: 3rem;
+	border: 1px solid map-get($map: $color, $key: gray-5);
+	&-default {
+		background: transparent;
+	}
+	&-light {
+		border: none;
+		background-color: map-get($map: $color, $key: white);
+	}
+	&-primary {
+		background-color: map-get($map: $color, $key: primary);
+	}
+}
+@include md-screen {
+	.btn {
+		padding: 0.25rem 0.8rem;
+		font-size: 0.8333333rem;
+	}
+}
+.unbordered {
+	border: none;
+}

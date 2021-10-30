@@ -1,0 +1,13 @@
+.badge {
+	color: map-get($map: $color, $key: white);
+	background-color: map-get($map: $color, $key: red);
+	font-size: 0.75rem;
+	font-weight: bold;
+	padding: 6px 9px;
+	border-radius: 2rem;
+}
+@include md-screen {
+	.badge {
+		padding: 0.16666667rem 0.416666667rem;
+	}
+}
