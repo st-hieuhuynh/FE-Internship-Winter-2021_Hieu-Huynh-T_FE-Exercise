@@ -1,238 +1,238 @@
 .hero {
-	position: relative;
-	overflow: hidden;
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url(../assets/img/home-banner-desktop.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 0 center;
-	&-container {
-		padding: 13.875rem 0 0 6rem;
-	}
-	&-heading {
-		margin-bottom: 10.6875rem;
-		color: map-get($map: $color, $key: white);
-	}
-	&-text {
-		font-size: 4.5rem;
-		span {
-			display: block;
-		}
-		line-height: 4.5625rem;
-		font-weight: bold;
-	}
-	&-redirect {
-		font-size: 1.5rem;
-		font-weight: bold;
-		text-decoration: underline;
-		&::before {
-			content: "";
-			background: url(../assets/img/arrow-right.png);
-			background-repeat: no-repeat;
-			background-size: auto 1rem;
-			background-position: center center;
-			vertical-align: middle;
-			display: inline-block;
-			background-color: map-get($map: $color, $key: primary);
-			height: 2.25rem;
-			width: 2.25rem;
-			margin-right: 1.25rem;
-			border-radius: 50%;
-		}
-	}
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/img/home-banner-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 center;
+  &-container {
+    padding: 13.875rem 0 0 6rem;
+  }
+  &-heading {
+    margin-bottom: 10.6875rem;
+    color: map-get($map: $color, $key: white);
+  }
+  &-text {
+    font-size: 4.5rem;
+    span {
+      display: block;
+    }
+    line-height: 4.5625rem;
+    font-weight: bold;
+  }
+  &-redirect {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+    &::before {
+      content: "";
+      background: url(../assets/img/arrow-right.png);
+      background-repeat: no-repeat;
+      background-size: auto 1rem;
+      background-position: center center;
+      vertical-align: middle;
+      display: inline-block;
+      background-color: map-get($map: $color, $key: primary);
+      height: 2.25rem;
+      width: 2.25rem;
+      margin-right: 1.25rem;
+      border-radius: 50%;
+    }
+  }
 }
 .pill {
-	position: relative;
-	width: 75%;
-	bottom: 0;
-	padding-top: 2.25rem;
-	padding-bottom: 1.5rem;
-	padding-right: 6rem;
-	z-index: 1;
-	&::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		left: -100vw;
-		background-color: map-get($map: $color, $key: white);
-		border-top-right-radius: 3rem;
-		z-index: -10;
-	}
-	&-item {
-		display: flex;
-		flex-direction: row;
-		align-items: flex-start;
-		img {
-			width: 2.25rem;
-			background-color: #fff3df;
-			border-radius: 0.5rem;
-		}
-		&-content {
-			margin-left: 1rem;
-		}
-		&-title {
-			font-size: 0.875rem;
-			font-weight: bold;
-		}
-		&-desc {
-			font-size: 0.75rem;
-			color: map-get($map: $color, $key: gray-1);
-		}
-	}
+  position: relative;
+  width: 75%;
+  bottom: 0;
+  padding-top: 2.25rem;
+  padding-bottom: 1.5rem;
+  padding-right: 6rem;
+  z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: -100vw;
+    background-color: map-get($map: $color, $key: white);
+    border-top-right-radius: 3rem;
+    z-index: -10;
+  }
+  &-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    img {
+      width: 2.25rem;
+      background-color: #fff3df;
+      border-radius: 0.5rem;
+    }
+    &-content {
+      margin-left: 1rem;
+    }
+    &-title {
+      font-size: 0.875rem;
+      font-weight: bold;
+    }
+    &-desc {
+      font-size: 0.75rem;
+      color: map-get($map: $color, $key: gray-1);
+    }
+  }
 }
 .selected-product {
-	.container {
-		position: relative;
-		padding-bottom: 1rem;
-	}
-	.btn {
-		position: absolute;
-		top: 0;
-		right: 10px;
-	}
+  .container {
+    position: relative;
+    padding-bottom: 1rem;
+  }
+  .btn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
 }
 .today-product {
-	&-title {
-		text-align: left;
-	}
+  &-title {
+    text-align: left;
+  }
 }
 .banner {
-	&-item {
-		position: relative;
-		&-content {
-			position: absolute;
-			bottom: 3.3125rem;
-			left: 2.5rem;
-			right: 2.5rem;
-		}
-		&-title {
-			font-size: 1.5rem;
-			min-height: 4.5rem;
-			margin-bottom: 1.175rem;
-			color: map-get($map: $color, $key: white);
-		}
-	}
+  &-item {
+    position: relative;
+    &-content {
+      position: absolute;
+      bottom: 3.3125rem;
+      left: 2.5rem;
+      right: 2.5rem;
+    }
+    &-title {
+      font-size: 1.5rem;
+      min-height: 4.5rem;
+      margin-bottom: 1.175rem;
+      color: map-get($map: $color, $key: white);
+    }
+  }
 }
 
 .subcribe {
-	background: linear-gradient(
-			90deg,
-			rgba(0, 0, 0, 0.5) 10%,
-			rgba(0, 0, 0, 0) 90%
-		),
-		url(../assets/img/home-newsletter.png);
-	padding: 5.3125rem 0;
-	background-size: cover;
-	background-position: center;
-	&-title {
-		font-size: 1.5rem;
-		color: map-get($map: $color, $key: white);
-	}
-	.subcribe-form {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		align-items: center;
-		.input {
-			width: 60%;
-		}
-		.btn {
-			width: 30%;
-		}
-	}
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.5) 10%,
+      rgba(0, 0, 0, 0) 90%
+    ),
+    url(../assets/img/home-newsletter.png);
+  padding: 5.3125rem 0;
+  background-size: cover;
+  background-position: center;
+  &-title {
+    font-size: 1.5rem;
+    color: map-get($map: $color, $key: white);
+  }
+  .subcribe-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .input {
+      width: 60%;
+    }
+    .btn {
+      width: 30%;
+    }
+  }
 }
 
 @include lg-screen {
-	.banner {
-		&-item {
-			&-content {
-				bottom: 2rem;
-				left: 1rem;
-				right: 1rem;
-			}
-			&-title {
-				font-size: 1rem;
-				min-height: 3.5rem;
-				margin-bottom: 0.75rem;
-			}
-		}
-		.btn {
-			font-size: 0.8rem;
-			padding: 0.45rem 0.45rem;
-		}
-	}
+  .banner {
+    &-item {
+      &-content {
+        bottom: 2rem;
+        left: 1rem;
+        right: 1rem;
+      }
+      &-title {
+        font-size: 1rem;
+        min-height: 3.5rem;
+        margin-bottom: 0.75rem;
+      }
+    }
+    .btn {
+      font-size: 0.8rem;
+      padding: 0.45rem 0.45rem;
+    }
+  }
 }
 @include md-screen {
-	.hero {
-		margin-bottom: 2rem;
-		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-			url(../assets/img/home-banner.png);
-		&-container {
-			padding: 22.58333333rem 0;
-		}
-		&-heading {
-			margin-bottom: 0;
-		}
-		&-text {
-			font-size: 4rem;
-		}
-		&-redirect {
-			&::before {
-				height: 2.6666667rem;
-				width: 2.6666667rem;
-			}
-		}
-	}
-	.pill {
-		display: none;
-	}
-	.selected-product {
-		.btn {
-			margin-top: 0.5833333rem;
-			right: 2rem;
-			padding: 0 0.25rem;
-			border: none;
-		}
-	}
-	.banner {
-		&-item {
-			&-content {
-				left: 1.3333333rem;
-				bottom: 1.3333333rem;
-				right: 1.3333333rem;
-			}
-			&-title {
-				font-size: 1.1666666667rem;
-				min-height: 3.5rem;
-				margin-bottom: 0.75rem;
-			}
-		}
-		.btn {
-			padding: 0.25rem 0.8rem;
-			font-size: 0.8333333rem;
-		}
-	}
-	.subcribe {
-		padding: 2rem 0;
-		&-title {
-			font-size: 1.1666666667rem;
-			width: 60%;
-			margin-bottom: 2rem;
-		}
-		.subcribe-form {
-			.input {
-				width: 100%;
-				margin-bottom: 1.33333333rem;
-			}
-			.btn {
-				font-size: 1rem;
-				padding-top: 0.8rem;
-				padding-bottom: 0.8rem;
-				width: 40%;
-			}
-		}
-	}
+  .hero {
+    margin-bottom: 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../assets/img/home-banner.png);
+    &-container {
+      padding: 22.58333333rem 0;
+    }
+    &-heading {
+      margin-bottom: 0;
+    }
+    &-text {
+      font-size: 4rem;
+    }
+    &-redirect {
+      &::before {
+        height: 2.6666667rem;
+        width: 2.6666667rem;
+      }
+    }
+  }
+  .pill {
+    display: none;
+  }
+  .selected-product {
+    .btn {
+      margin-top: 0.5833333rem;
+      right: 2rem;
+      padding: 0 0.25rem;
+      border: none;
+    }
+  }
+  .banner {
+    &-item {
+      &-content {
+        left: 1.3333333rem;
+        bottom: 1.3333333rem;
+        right: 1.3333333rem;
+      }
+      &-title {
+        font-size: 1.1666666667rem;
+        min-height: 3.5rem;
+        margin-bottom: 0.75rem;
+      }
+    }
+    .btn {
+      padding: 0.25rem 0.8rem;
+      font-size: 0.8333333rem;
+    }
+  }
+  .subcribe {
+    padding: 2rem 0;
+    &-title {
+      font-size: 1.1666666667rem;
+      width: 60%;
+      margin-bottom: 2rem;
+    }
+    .subcribe-form {
+      .input {
+        width: 100%;
+        margin-bottom: 1.33333333rem;
+      }
+      .btn {
+        font-size: 1rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        width: 40%;
+      }
+    }
+  }
 }
