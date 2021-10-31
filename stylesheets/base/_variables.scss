@@ -1,0 +1,32 @@
+// Color
+$color: (
+	primary: #fbb03b,
+	white: #fff,
+	black: #333333,
+	gray-1: #a8a8a8,
+	gray-2: #808080,
+	gray-3: #cecece,
+	gray-4: #f6f6f6,
+	gray-5: #c4c4c4,
+	red: #f00,
+);
+// Font
+$font-family-primary: "Poppins", sans-serif;
+$font-size-md: 16px;
+$font-size-sm: 12px;
+// Break point
+$break-point: (
+	medium: 768px,
+	large: 990px,
+);
+// Size space
+$list-size: xxs, xs, s, m, l, xl, xxl;
+$size: (
+	xxs: 0.25rem,
+	xs: 0.5rem,
+	s: 0.75rem,
+	m: 1rem,
+	l: 1.5rem,
+	xl: 3rem,
+	xxl: 6rem,
+);

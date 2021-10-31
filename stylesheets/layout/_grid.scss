@@ -1,0 +1,55 @@
+@use "sass:math";
+$num-col: 12;
+.container {
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 0.625rem;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0 -0.625rem;
+	> * {
+		box-sizing: border-box;
+		max-width: 100%;
+		padding: 0 0.625rem;
+	}
+	.col {
+		flex: 1;
+	}
+	@for $i from 1 to $num-col + 1 {
+		.col-#{$i} {
+			flex: 0 0 auto;
+			width: math.div($i, $num-col) * 100%;
+		}
+	}
+}
+
+@include lg-screen {
+	.container {
+		max-width: map-get($map: $break-point, $key: large);
+	}
+	.row {
+		@for $i from 1 to $num-col {
+			.col-lg-#{$i} {
+				flex: 0 0 auto;
+				width: math.div($i, $num-col) * 100%;
+			}
+		}
+	}
+}
+@include md-screen {
+	.container {
+		max-width: map-get($map: $break-point, $key: medium);
+	}
+	.row {
+		@for $i from 1 to $num-col + 1 {
+			.col-md-#{$i} {
+				flex: 0 0 auto;
+				width: math.div($i, $num-col) * 100%;
+			}
+		}
+	}
+}

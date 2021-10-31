@@ -1,0 +1,37 @@
+.product {
+	position: relative;
+	&-img {
+		margin-bottom: 1rem;
+	}
+	&-price {
+		display: flex;
+		font-size: 1.25rem;
+		&.new-price {
+			color: map-get($map: $color, $key: red);
+			margin-right: auto;
+		}
+		&.old-price {
+			color: map-get($map: $color, $key: gray-3);
+		}
+	}
+	&-promo {
+		position: absolute;
+		top: 1.5rem;
+		left: 1rem;
+	}
+}
+@include md-screen {
+	.product {
+		&-img {
+			margin-bottom: 0rem;
+		}
+		&-price {
+			font-size: 0.833333rem;
+			margin-bottom: 0.333333rem;
+		}
+		&-promo {
+			top: 1rem;
+			left: 0.75rem;
+		}
+	}
+}

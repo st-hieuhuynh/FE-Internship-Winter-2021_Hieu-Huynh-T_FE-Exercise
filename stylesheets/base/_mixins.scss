@@ -1,0 +1,12 @@
+//Medium Screen
+@mixin md-screen {
+	@media only screen and (max-width: map-get($map: $break-point, $key: medium)) {
+		@content;
+	}
+}
+//Large Screen
+@mixin lg-screen {
+	@media only screen and (max-width: map-get($map: $break-point, $key: large)) {
+		@content;
+	}
+}
