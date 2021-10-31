@@ -5,6 +5,9 @@
 .mobile-screen {
 	display: none;
 }
+.hide{
+	display: none;
+}
 @include md-screen {
 	.desktop-screen {
 		display: none;
