@@ -18,8 +18,8 @@ Group: 01
 ## Training Process
 
 - [x] HTML
-- [ ] CSS
-- [ ] SASS
+- [x] CSS
+- [x] SASS
 - [ ] JavaScript
 - [ ] TypeScript
 - [ ] ReactJS
